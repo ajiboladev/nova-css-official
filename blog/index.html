@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCSS Blog - Stay Updated</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="../v2.1.0/nova-logo.jpeg">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="blog-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo">NovaCSS</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../v2.1.0/index.html" class="nav-link">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Blog</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="blog-hero">
+            <div class="container">
+                <h1 class="blog-title">NovaCSS Blog</h1>
+                <p class="blog-subtitle">Stay updated with the latest releases, tips, and tutorials.</p>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search blog posts..." class="search-input">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="blog-main">
+        <div class="container">
+            <div class="blog-layout">
+                <!-- Blog Posts Section -->
+                <section class="blog-posts-section">
+                    <h2 class="section-title">Latest Posts</h2>
+                    
+                    <div class="blog-grid" id="blogGrid">
+                        <!-- Blog Post 1 -->
+                        <article class="blog-card" data-category="releases" data-title="novacss v2.1.0 released">
+                            <div class="card-content">
+                                <h3 class="card-title">
+                                    <a href="/blog/nova-v2.1.0-release.html">NovaCSS v2.1.0 Released 🎉</a>
+                                </h3>
+                                <p class="card-excerpt">Explore the new responsive utilities and animation features in this major release.</p>
+                                <div class="card-meta">
+                                    <span class="publish-date">March 15, 2025</span>
+                                    <span class="category-tag releases">Releases</span>
+                                </div>
+                                <a href="/blog/nova-v2.1.0-release.html" class="read-more">Read More →</a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 2 -->
+                        <article class="blog-card" data-category="tutorials" data-title="building responsive navbar">
+                            <div class="card-content">
+                                <h3 class="card-title">
+                                    <a href="/blog/build-responsive-navbar.html">Building Responsive Navbar with NovaCSS 🧭</a>
+                                </h3>
+                                <p class="card-excerpt">A step-by-step guide to create modern navigation using Nova components.</p>
+                                <div class="card-meta">
+                                    <span class="publish-date">March 10, 2025</span>
+                                    <span class="category-tag tutorials">Tutorials</span>
+                                </div>
+                                <a href="/blog/build-responsive-navbar.html" class="read-more">Read More →</a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 3 -->
+                        <article class="blog-card" data-category="tips" data-title="how novacss keeps things lightweight">
+                            <div class="card-content">
+                                <h3 class="card-title">
+                                    <a href="/blog/lightweight-framework.html">How NovaCSS Keeps Things Lightweight ⚡</a>
+                                </h3>
+                                <p class="card-excerpt">Learn how NovaCSS balances speed, beauty, and simplicity.</p>
+                                <div class="card-meta">
+                                    <span class="publish-date">March 5, 2025</span>
+                                    <span class="category-tag tips">Tips</span>
+                                </div>
+                                <a href="/blog/lightweight-framework.html" class="read-more">Read More →</a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 4 -->
+                        <article class="blog-card" data-category="tutorials" data-title="customizing novacss colors">
+                            <div class="card-content">
+                                <h3 class="card-title">
+                                    <a href="/blog/custom-colors.html">Customizing NovaCSS Colors & Themes 🎨</a>
+                                </h3>
+                                <p class="card-excerpt">Learn how to customize the color scheme and create your own themes with NovaCSS variables.</p>
+                                <div class="card-meta">
+                                    <span class="publish-date">February 28, 2025</span>
+                                    <span class="category-tag tutorials">Tutorials</span>
+                                </div>
+                                <a href="/blog/custom-colors.html" class="read-more">Read More →</a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 5 -->
+                        <article class="blog-card" data-category="releases" data-title="v2.0.0 migration guide">
+                            <div class="card-content">
+                                <h3 class="card-title">
+                                    <a href="/blog/migration-guide.html">Migration Guide: v2.0.0 to v2.1.0 📋</a>
+                                </h3>
+                                <p class="card-excerpt">Everything you need to know to smoothly upgrade from NovaCSS v2.0.0 to v2.1.0.</p>
+                                <div class="card-meta">
+                                    <span class="publish-date">February 20, 2025</span>
+                                    <span class="category-tag releases">Releases</span>
+                                </div>
+                                <a href="/blog/migration-guide.html" class="read-more">Read More →</a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 6 -->
+                        <article class="blog-card" data-category="tips" data-title="performance optimization">
+                            <div class="card-content">
+                                <h3 class="card-title">
+                                    <a href="/blog/performance-tips.html">Performance Optimization with NovaCSS 🚀</a>
+                                </h3>
+                                <p class="card-excerpt">Best practices for maximizing performance when using NovaCSS in your projects.</p>
+                                <div class="card-meta">
+                                    <span class="publish-date">February 15, 2025</span>
+                                    <span class="category-tag tips">Tips</span>
+                                </div>
+                                <a href="/blog/performance-tips.html" class="read-more">Read More →</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- Categories Section -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">📁 Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#" data-category="all" class="category-filter active">All Posts</a></li>
+                            <li><a href="#" data-category="releases" class="category-filter">Releases</a></li>
+                            <li><a href="#" data-category="tutorials" class="category-filter">Tutorials</a></li>
+                            <li><a href="#" data-category="tips" class="category-filter">Tips</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Useful Links Section -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">🔗 Useful Links</h3>
+                        <ul class="links-list">
+                            <li><a href="/v2.1.0/">Documentation</a></li>
+                            <li><a href="https://github.com/ajiboladev/nova-css" target="_blank">GitHub Repository</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/blog/archive.html">Blog Archive</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Newsletter Signup -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">💌 Stay Updated</h3>
+                        <p class="newsletter-text">Get the latest NovaCSS news delivered to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" class="newsletter-input">
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="blog-footer">
+        <div class="container">
+            <p>Developed with 💙 by AJIBOLA.</p>
+            <p class="copyright">© <span id="currentYear">2025</span> NovaCSS</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
