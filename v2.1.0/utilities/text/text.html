@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova CSS _ utilities-text</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="sidebar-text.css">
+    <link rel="stylesheet" href="media-text.css">
+    <link rel="icon" href="../../nova-logo.jpeg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../../index.html" class="logo">Nova CSS</a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../../utilities.html" class="nav-link active">Utilities</a></li>
+                    <li><a href="../../components.html" class="nav-link">Components</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">v2.1.0</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" active>v2.1.0 (Current)</a>
+                            <a href="#" class="dropdown-item">v2.0.0</a>
+                            <a href="#" class="dropdown-item">v1.0.0</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="nv-text-light-dark"><a href="#upward" class="nv-text-none nv-text-light-dark" style="text-decoration: none; color: #333;">Font</a></h3>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li><a href="#font-size" class="sidebar-link">Font Size</a></li>
+                    <li><a href="#font-weight" class="sidebar-link">Font weight</a></li>
+                    <li><a href="#title" class="sidebar-link">Titles</a></li>
+                    <li><a href="#text-alignment" class="sidebar-link">Text Alignment</a></li>
+                    <li><a href="#text-decoration" class="sidebar-link">Text Decoration</a></li>
+                    <li><a href="#text-transform" class="sidebar-link">Text Transform</a></li>
+                    <li><a href="#font-style" class="sidebar-link">Font Style</a></li>
+                    <li><a href="#letter-spacing" class="sidebar-link">Letter Spacing</a></li>
+                    <li><a href="#text-overflow-wrapping" class="sidebar-link">Text Overflow</a></li>
+                    <li><a href="#margin-left" class="sidebar-link">Margin Left</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <section id="upward" class="page-header nv-mt-5">
+                    <h1>Text</h1>
+                    <p class="page-subtitle">Text utilities in Nova CSS provide quick and flexible control over typography. You can easily adjust text alignment, transformation, color, and weight without writing custom CSS. These utilities help you maintain consistency and speed up your workflow when styling text elements across your project.</p>
+                    <p class="page-subtitle nv-mt-5"><strong>Note:</strong> all Nova Css Documentation are started with <em>.nv-</em></p>
+                </section>
+
+                <!-- Text Utilities -->
+                <section class="utility-section">
+                    <div class="section-header">
+                        <h2>Text Utilities</h2>
+                        <p>Control font and other typography with consistent sizing scale</p>
+                    </div>
+                                        <!-- Font Size -->
+                    <div id="font-size" class="utility-card">
+                        <div class="card-header">
+                            <h3>Font Size Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-fs-1</code></td>
+                                            <td>font size</td>
+                                            <td>2.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-fs-2</code></td>
+                                            <td>font size</td>
+                                            <td>2rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-fs-3</code></td>
+                                            <td>font size</td>
+                                            <td>1.75rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-fs-4</code></td>
+                                            <td>font size</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-fs-5</code></td>
+                                            <td>font size</td>
+                                            <td>1.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-fs-6</code></td>
+                                            <td>font size</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-bg-primary nv-text-light nv-p-5 nv-fs-1">
+                                        This text has font size 1 (.nv-fs-1)
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-bg-primary nv-text-light nv-p-5 nv-fs-1"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                                        <!-- Font Weight -->
+                    <div id="font-weight" class="utility-card">
+                        <div class="card-header">
+                            <h3>Font Weight Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-fw-l</code></td>
+                                            <td>font weight (light)</td>
+                                            <td>300</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-fw-n</code></td>
+                                            <td>font weight (normal)</td>
+                                            <td>400</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-fw-sb</code></td>
+                                            <td>font weight (semibold)</td>
+                                            <td>600</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-fw-b</code></td>
+                                            <td>font weight (bold)</td>
+                                            <td>700</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-p-3 nv-bg-danger nv-text-light nv-fw-b">
+                                        This text has font weight bold 
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-p-3 nv-bg-danger nv-text-light nv-fw-b"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Titles -->
+                    <div id="title" class="utility-card">
+                        <div class="card-header">
+                            <h3>Title Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-title-1</code></td>
+                                            <td>font size</td>
+                                            <td>4rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-title-2</code></td>
+                                            <td>font size</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-title-3</code></td>
+                                            <td>font size</td>
+                                            <td>3.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-title-4</code></td>
+                                            <td>font size</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-title-5</code></td>
+                                            <td>font size</td>
+                                            <td>2.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-title-6</code></td>
+                                            <td>font size</td>
+                                            <td>2rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-p-5 nv-bg-light-dark nv-text-light nv-title-5">
+                                        This text has title "5"
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-p-5 nv-bg-light-dark nv-text-light nv-title-5"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Text Alignment -->
+                    <div id="text-alignment" class="utility-card">
+                        <div class="card-header">
+                            <h3>Text Alignment Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>position</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-text-left</code></td>
+                                            <td>align-left</td>
+                                            <td>left</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-right</code></td>
+                                            <td>align-right</td>
+                                            <td>right</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-justify</code></td>
+                                            <td>align-justify</td>
+                                            <td>justify</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-center</code></td>
+                                            <td>align-center</td>
+                                            <td>center</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-pr-5 nv-bg-secondary nv-text-light nv-text-center">
+                                        This text is in center
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-pr-5 nv-bg-secondary nv-text-light nv-text-center"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Text Decoration -->
+                    <div id="text-decoration" class="utility-card">
+                        <div class="card-header">
+                            <h3>Text Decoration Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Decoration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-text-none</code></td>
+                                            <td>---</td>
+                                            <td>none</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-underline</code></td>
+                                            <td>---</td>
+                                            <td>underline</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-line-through</code></td>
+                                            <td>---</td>
+                                            <td>line-through</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-pl-5 nv-bg-warning nv-text-danger nv-text-underline">
+                                        This text has a line under it
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-pl-5 nv-bg-warning nv-text-danger nv-text-underline"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                            <!-- Text Transform -->
+                    <!-- Text Transform -->
+                    <div id="text-transform" class="utility-card">
+                        <div class="card-header">
+                            <h3>Text Transform Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Transform</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-text-upper</code></td>
+                                            <td>text upper</td>
+                                            <td>uppercase</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-lower</code></td>
+                                            <td>text lower</td>
+                                            <td>lowercase</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-normal</code></td>
+                                            <td>text normal</td>
+                                            <td>none</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-capital</code></td>
+                                            <td>text capital</td>
+                                            <td>capitalize</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-m-5 nv-bg-dark nv-text-light nv-text-upper nv-pl-3">
+                                        This text is in uppercase
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-m-5 nv-bg-dark nv-text-light nv-text-upper nv-pl-3"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+<div id="copy-status" style="display: none; padding: 10px; margin: 5px 0; border-radius: 5px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Font Style-->
+                    <div id="font-style" class="utility-card">
+                        <div class="card-header">
+                            <h3>Font Style Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Style</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-font-i</code></td>
+                                            <td>---</td>
+                                            <td>italic</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-font-n</code></td>
+                                            <td>---</td>
+                                            <td>normal</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-font-o</code></td>
+                                            <td>---</td>
+                                            <td>oblique</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-mt-5 nv-bg-danger nv-text-light nv-font-i nv-pl-3">
+                                        This text has italic font
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-mt-5 nv-bg-danger nv-text-light nv-font-i nv-pl-3"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Letter Spacing-->
+                    <div id="letter-spacing" class="utility-card">
+                        <div class="card-header">
+                            <h3>Letter Spacing Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-ls-1</code></td>
+                                            <td>letter-spacing</td>
+                                            <td>0.05em</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ls-2</code></td>
+                                            <td>letter-spacing</td>
+                                            <td>0.1em</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ls-3</code></td>
+                                            <td>letter-spacing</td>
+                                            <td>0.15em</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ls-4</code></td>
+                                            <td>letter-spacing</td>
+                                            <td>0.2em</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ls-5</code></td>
+                                            <td>letter-spacing</td>
+                                            <td>0.3em</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-mb-5 nv-bg-dark nv-text-light nv-ls-5 nv-pl-5">
+                                        Each letter has space in between
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-mb-5 nv-bg-dark nv-text-light nv-ls-5"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text Overflow / Wrapping-->
+                    <div id="text-overflow-wrapping" class="utility-card">
+                        <div class="card-header">
+                            <h3>Text Overflow / Wrapping Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-text-truncate</code></td>
+                                            <td><code>overflow-hidden</code>.....</td>
+                                            <td>---</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-nowrap</code></td>
+                                            <td>nowrap</td>
+                                            <td>---</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-mr-1 nv-bg-dark nv-text-light nv-pl-1 nv-w-90 nv-text-nowrap nv-text-truncate">
+                                        <!-- This text has over has <code class="nv-font-i">.nv-text-turncate</code> so any other text will not wrap and hide Overflow, others will not show -->
+                                         <p>the rest of this text will be .....</p>
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-mr-5 nv-bg-dark nv-text-light"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                     <!-- Word Spacing-->
+                    <div id="word-spacing" class="utility-card">
+                        <div class="card-header">
+                            <h3>Word Spacing Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-ws-1</code></td>
+                                            <td>word-spacing</td>
+                                            <td>1em</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ws-2</code></td>
+                                            <td>word-spacing</td>
+                                            <td>1.5em</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ws-3</code></td>
+                                            <td>word-spacing</td>
+                                            <td>2.5em</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ws-4</code></td>
+                                            <td>word-spacing</td>
+                                            <td>3em</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ws-5</code></td>
+                                            <td>word-spacing</td>
+                                            <td>5em</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-mb-5 nv-bg-dark nv-text-light nv-ws-5 nv-pl-5">
+                                        Each word has space in between
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-mb-5 nv-bg-dark nv-text-light nv-ls-5"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 <a href="https://github.com/ajiboladev" target="_blank">Abdul-Azeez Ajibola</a></p>
+                <p>Developed & managed by Abdul-Azeez Ajibola</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="text.js"></script>
+</body>
+</html>

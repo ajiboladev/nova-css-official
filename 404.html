@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./v2.1.0/nova-logo.jpeg">
+    <title>Page Not Found | 404 Error</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #3498db, #2ecc71, #e74c3c, #f39c12);
+        }
+        
+        /* Error Code */
+        .error-code {
+            font-size: 120px;
+            font-weight: 800;
+            color: #e74c3c;
+            line-height: 1;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Error Message */
+        .error-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .error-description {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+        }
+        
+        .btn-secondary {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #d5dbdb;
+        }
+        
+        /* Animation */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            color: #2c3e50;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .footer-logo {
+            height: 30px;
+            width: auto;
+            filter: grayscale(0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .footer-logo:hover {
+            filter: grayscale(0);
+            transform: scale(1.05);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 90px;
+            }
+            
+            .error-title {
+                font-size: 24px;
+            }
+            
+            .error-description {
+                font-size: 16px;
+            }
+            
+            .container {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .error-code {
+                font-size: 70px;
+            }
+            
+            .error-title {
+                font-size: 22px;
+            }
+            
+            .error-description {
+                font-size: 15px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+            }
+            
+            .footer {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+                border-radius: 12px;
+            }
+        }
+        
+        /* Decorative Elements */
+        .decoration {
+            position: absolute;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #3498db;
+            top: -80px;
+            right: -80px;
+        }
+        
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 173px solid #e74c3c;
+            bottom: -100px;
+            left: -80px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="decoration circle"></div>
+        <div class="decoration triangle"></div>
+        
+        <div class="error-code floating">404</div>
+        <h1 class="error-title">Oops! Page Not Found</h1>
+        <p class="error-description">
+            The page you're looking for seems to have wandered off into the digital void. 
+            It might have been moved, deleted, or perhaps it never existed in the first place.
+        </p>
+        
+        <div class="action-buttons">
+            <a href="index.html" class="btn">Go to Homepage</a>
+            <button class="btn btn-secondary" id="goBackBtn">Go Back</button>
+            <a href="https://wa.link/hkxn40" class="btn btn-secondary">Contact Support</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <!-- CUSTOMIZATION AREA - Replace with your information -->
+        <p>&copy; 2025 AjibolaDev. All rights reserved.</p>
+        <img src="./v2.1.0/nova-logo.jpeg" alt="Website Logo" class="footer-logo">
+        <!-- END CUSTOMIZATION AREA -->
+    </div>
+
+    <script>
+        // Go back button functionality
+        document.getElementById('goBackBtn').addEventListener('click', function() {
+            window.history.back();
+        });
+        
+        // Add subtle hover effect to the error code
+        const errorCode = document.querySelector('.error-code');
+        errorCode.addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.05)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        
+        errorCode.addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+</html>

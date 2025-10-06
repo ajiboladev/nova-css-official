@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova CSS - Lightweight CSS Framework</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="css-main.css">
+    <link rel="stylesheet" href="css-responsive.css">
+    <link rel="icon" href="nova-logo.jpeg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Nova CSS</a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="utilities.html" class="nav-link">Utilities</a></li>
+                    <li><a href="components.html" class="nav-link">Components</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">v2.1.0</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">v2.1.0 (Current)</a>
+                            <a href="#" class="dropdown-item">v2.0.0</a>
+                            <a href="#" class="dropdown-item">v1.0.0</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title nv-mt-5">Nova CSS Framework</h1>
+                <p class="hero-subtitle">A lightweight, responsive CSS framework designed for modern web development with utility-first approach</p>
+                
+                <div class="hero-actions">
+                    <a href="#getting-started" class="btn btn-primary btn-lg">Get Started</a>
+                    <a href="components.html" class="btn btn-outline btn-lg">View Components</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started -->
+    <section id="getting-started" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Getting Started</h2>
+                <p>Add Nova CSS to your project quickly and easily</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>CDN Installation</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Add this link to your HTML head section:</p>
+                        <div class="code-snippet">
+                            <code>&lt;link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css"&gt;</code>
+                            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>NPM Installation</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Install via NPM:</p>
+                        <div class="code-snippet">
+                            <code>npm install nova-css</code>
+                            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Nova CSS?</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Lightweight</h3>
+                    <p>Only 3KB gzipped. Fast loading and efficient.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Responsive</h3>
+                    <p>Mobile-first approach that works on all devices.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Customizable</h3>
+                    <p>Easy to customize with CSS variables.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Utility-First</h3>
+                    <p>Build complex designs with simple utility classes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 <a href="https://github.com/ajiboladev" target="_blank">Abdul-Azeez Ajibola</a></p>
+                <p>Developed & managed by Abdul-Azeez Ajibola</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js-main.js"></script>
+</body>
+</html>

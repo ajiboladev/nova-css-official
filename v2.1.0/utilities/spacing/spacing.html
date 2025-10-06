@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova CSS _ utilities-spacing</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="spacing.css">
+    <link rel="stylesheet" href="sidebar-spacing.css">
+    <link rel="stylesheet" href="media-spacing.css">
+    <link rel="icon" href="../../nova-logo.jpeg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../../index.html" class="logo">Nova CSS</a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../../utilities.html" class="nav-link active">Utilities</a></li>
+                    <li><a href="../../components.html" class="nav-link">Components</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">v2.1.0</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" active>v2.1.0 (Current)</a>
+                            <a href="#" class="dropdown-item">v2.0.0</a>
+                            <a href="#" class="dropdown-item">v1.0.0</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="nv-text-light-dark"><a href="#upward" class="nv-text-none nv-text-light-dark" style="text-decoration: none; color: #333;">Spacing</a></h3>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li><a href="#padding" class="sidebar-link">Padding</a></li>
+                    <li><a href="#padding-top" class="sidebar-link">Padding Top</a></li>
+                    <li><a href="#padding-bottom" class="sidebar-link">Padding Bottom</a></li>
+                    <li><a href="#padding-right" class="sidebar-link">Padding Right</a></li>
+                    <li><a href="#padding-left" class="sidebar-link">Padding Left</a></li>
+                    <li><a href="#margin" class="sidebar-link">Margin</a></li>
+                    <li><a href="#margin-top" class="sidebar-link">Margin Top</a></li>
+                    <li><a href="#margin-bottom" class="sidebar-link">Margin Bottom</a></li>
+                    <li><a href="#margin-right" class="sidebar-link">Margin Right</a></li>
+                    <li><a href="#margin-left" class="sidebar-link">Margin Left</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <section id="upward" class="page-header nv-mt-5">
+                    <h1>Spacing</h1>
+                    <p class="page-subtitle">Build custom designs with Nova CSS spacing classes</p>
+                    <p class="page-subtitle"><strong>Note:</strong> all Nova Css Documentation are started with <em>.nv-</em></p>
+                </section>
+
+                <!-- Spacing Utilities -->
+                <section class="utility-section">
+                    <div class="section-header">
+                        <h2>Spacing Utilities</h2>
+                        <p>Control margin and padding with consistent spacing scale</p>
+                    </div>
+                                        <!-- Padding -->
+                    <div id="padding" class="utility-card">
+                        <div class="card-header">
+                            <h3>Padding Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-p-0</code></td>
+                                            <td>padding</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-p-1</code></td>
+                                            <td>padding</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-p-2</code></td>
+                                            <td>padding</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-p-3</code></td>
+                                            <td>padding</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-p-4</code></td>
+                                            <td>padding</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-p-5</code></td>
+                                            <td>padding</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>(.nv-px-0)</code>- <code>(.nv-px-5)</code></td>
+                                            <td>(padding-right) & (padding-left)</td>
+                                            <td>0-5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>(.nv-py-0)</code>- <code>(.nv-py-5)</code></td>
+                                            <td>(padding-top) & (padding-bottom)</td>
+                                            <td>0-5rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="m-4 p-4 bg-primary text-white rounded">
+                                        This box has margin and padding
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-m-4 nv-p-4 nv-bg-primary nv-text-light"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                                        <!-- Padding Top -->
+                    <div id="padding-top" class="utility-card">
+                        <div class="card-header">
+                            <h3>Padding Top Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-pt-0</code></td>
+                                            <td>padding top</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pt-1</code></td>
+                                            <td>padding top</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pt-2</code></td>
+                                            <td>padding top</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pt-3</code></td>
+                                            <td>padding top</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pt-4</code></td>
+                                            <td>padding top</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pt-5</code></td>
+                                            <td>padding top</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-pt-5 nv-bg-danger nv-text-light">
+                                        This box has padding top
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-pt-4 nv-bg-danger nv-text-light"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Padding Bottom -->
+                    <div id="padding-bottom" class="utility-card">
+                        <div class="card-header">
+                            <h3>Padding Bottom Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-pb-0</code></td>
+                                            <td>padding bottom</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pb-1</code></td>
+                                            <td>padding bottom</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pb-2</code></td>
+                                            <td>padding bottom</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pb-3</code></td>
+                                            <td>padding bottom</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pb-4</code></td>
+                                            <td>padding bottom</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pb-5</code></td>
+                                            <td>padding bottom</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-pb-5 nv-bg-light-dark nv-text-light">
+                                        This box has padding bottom
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-pb-4 nv-bg-light-dark nv-text-light"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Padding Right -->
+                    <div id="padding-right" class="utility-card">
+                        <div class="card-header">
+                            <h3>Padding Right Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-pr-0</code></td>
+                                            <td>padding right</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pr-1</code></td>
+                                            <td>padding right</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pr-2</code></td>
+                                            <td>padding right</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pr-3</code></td>
+                                            <td>padding right</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pr-4</code></td>
+                                            <td>padding right</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pr-5</code></td>
+                                            <td>padding right</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-pr-5 nv-bg-secondary nv-text-light">
+                                        This box has padding right
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-pr-5 nv-bg-secondary nv-text-light"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Padding Left -->
+                    <div id="padding-left" class="utility-card">
+                        <div class="card-header">
+                            <h3>Padding Left Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-pl-0</code></td>
+                                            <td>padding left</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pl-1</code></td>
+                                            <td>padding left</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pl-2</code></td>
+                                            <td>padding left</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pl-3</code></td>
+                                            <td>padding left</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pl-4</code></td>
+                                            <td>padding left</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-pl-5</code></td>
+                                            <td>padding left</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-pl-5 nv-bg-warning nv-text-danger">
+                                        This box has padding left
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-pl-4 nv-bg-warning nv-text-danger"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                            <!-- Margin -->
+                    <!-- Margin -->
+                    <div id="margin" class="utility-card">
+                        <div class="card-header">
+                            <h3>Margin Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-m-0</code></td>
+                                            <td>margin</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-m-1</code></td>
+                                            <td>margin</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-m-2</code></td>
+                                            <td>margin</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-m-3</code></td>
+                                            <td>margin</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-m-4</code></td>
+                                            <td>margin</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-m-5</code></td>
+                                            <td>margin</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>(.nv-mx-0)</code>- <code>(.nv-mx-5)</code></td>
+                                            <td>(margin-right) & (margin-left)</td>
+                                            <td>0-5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>(.nv-my-0)</code>- <code>(.nv-my-5)</code></td>
+                                            <td>(margin-top) & (margin-bottom)</td>
+                                            <td>0-5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>(.nv-mx-n1)</code>- <code>(.nv-mx-n5)</code></td>
+                                            <td>margin negative (right-left)</td>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>(.nv-my-0)</code>- <code>(.nv-my-5)</code></td>
+                                            <td>margin negative (top-bottom)</td>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-m-auto</code></td>
+                                            <td>margin auto</td>
+                                            <td>auto</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mx-auto</code></td>
+                                            <td>margin auto (left-right)</td>
+                                            <td>auto</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-my-auto</code></td>
+                                            <td>margin auto (top-bottom)</td>
+                                            <td>auto</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-m-5 nv-bg-dark nv-text-light">
+                                        This box has margin
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-m-5 nv-bg-dark nv-text-light"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Margin Top-->
+                    <div id="margin-top" class="utility-card">
+                        <div class="card-header">
+                            <h3>Margin Top Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-mt-0</code></td>
+                                            <td>margin top</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mt-1</code></td>
+                                            <td>margin top</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mt-2</code></td>
+                                            <td>margin top</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mt-3</code></td>
+                                            <td>margin top</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mt-4</code></td>
+                                            <td>margin top</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mt-5</code></td>
+                                            <td>margin top</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-mt-5 nv-bg-danger nv-text-light">
+                                        This box has margin top
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-mt-5 nv-bg-danger nv-text-light"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Margin Bottom-->
+                    <div id="margin-bottom" class="utility-card">
+                        <div class="card-header">
+                            <h3>Margin Bottom Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-mb-0</code></td>
+                                            <td>margin bottom</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mb-1</code></td>
+                                            <td>margin bottom</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mb-2</code></td>
+                                            <td>margin bottom</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mb-3</code></td>
+                                            <td>margin bottom</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mb-4</code></td>
+                                            <td>margin bottom</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mb-5</code></td>
+                                            <td>margin bottom</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-mb-5 nv-bg-dark nv-text-light">
+                                        This box has margin bottom
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-mb-5 nv-bg-dark nv-text-light"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Margin Right-->
+                    <div id="margin-right" class="utility-card">
+                        <div class="card-header">
+                            <h3>Margin Right Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-mr-0</code></td>
+                                            <td>margin right</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mr-1</code></td>
+                                            <td>margin right</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mr-2</code></td>
+                                            <td>margin right</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mr-3</code></td>
+                                            <td>margin right</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mr-4</code></td>
+                                            <td>margin right</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-mr-5</code></td>
+                                            <td>margin right</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-mr-5 nv-bg-dark nv-text-light">
+                                        This box has margin right
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-mr-5 nv-bg-dark nv-text-light"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Margin Left-->
+                    <div id="margin-left" class="utility-card">
+                        <div class="card-header">
+                            <h3>Margin Left Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-ml-0</code></td>
+                                            <td>margin left</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ml-1</code></td>
+                                            <td>margin left</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ml-2</code></td>
+                                            <td>margin left</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ml-3</code></td>
+                                            <td>margin left</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ml-4</code></td>
+                                            <td>margin left</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-ml-5</code></td>
+                                            <td>margin left</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-ml-5 nv-bg-danger nv-text-light-dark">
+                                        This box has margin left
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-ml-5 nv-bg-danger nv-text-light-dark"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div id="" class="utility-card">
+                        <div class="card-header">
+                            <h3>Padding Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-p-0</code></td>
+                                            <td>padding</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-p-2</code></td>
+                                            <td>padding</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-p-4</code></td>
+                                            <td>padding</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-px-3</code></td>
+                                            <td>padding-left/right</td>
+                                            <td>0.75rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-py-2</code></td>
+                                            <td>padding-top/bottom</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                Flexbox Utilities
+                <section id="flexbox" class="utility-section">
+                    <div class="section-header">
+                        <h2>Flexbox Utilities</h2>
+                        <p>Create flexible layouts with flexbox utilities</p>
+                    </div>
+
+                    <div class="utility-card">
+                        <div class="card-header">
+                            <h3>Flex Container</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-d-flex</code></td>
+                                            <td>display</td>
+                                            <td>flex</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-d-inline-flex</code></td>
+                                            <td>display</td>
+                                            <td>inline-flex</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-flex-row</code></td>
+                                            <td>flex-direction</td>
+                                            <td>row</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-flex-col</code></td>
+                                            <td>flex-direction</td>
+                                            <td>column</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="flex justify-between items-center p-4 bg-gray-100 rounded">
+                                        <div>Left</div>
+                                        <div>Center</div>
+                                        <div>Right</div>
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-d-flex nv-justify-between nv-items-center"&gt;...&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                Add more utility sections as needed
+                
+            </div>
+        </main>
+    </div> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 <a href="https://github.com/ajiboladev" target="_blank">Abdul-Azeez Ajibola</a></p>
+                <p>Developed & managed by Abdul-Azeez Ajibola</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="spacing.js"></script>
+</body>
+</html>

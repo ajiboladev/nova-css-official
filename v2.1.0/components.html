@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components - Nova CSS</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="css-main.css">
+    <link rel="stylesheet" href="css-sidebar.css">
+    <link rel="stylesheet" href="css-responsive.css">
+    <link rel="icon" href="nova-logo.jpeg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Nova CSS</a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="utilities.html" class="nav-link">Utilities</a></li>
+                    <li><a href="components.html" class="nav-link active">Components</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">v2.1.0</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">v2.1.0 (Current)</a>
+                            <a href="#" class="dropdown-item">v2.0.0</a>
+                            <a href="#" class="dropdown-item">v1.0.0</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>Components</h3>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li><a href="#buttons" class="sidebar-link">Buttons</a></li>
+                    <li><a href="#cards" class="sidebar-link">Cards</a></li>
+                    <li><a href="#alerts" class="sidebar-link">Alerts</a></li>
+                    <li><a href="#forms" class="sidebar-link">Forms</a></li>
+                    <li><a href="#navigation" class="sidebar-link">Navigation</a></li>
+                    <li><a href="#modals" class="sidebar-link">Modals</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <section class="page-header nv-mt-5">
+                    <h1>Components</h1>
+                    <p class="page-subtitle">Pre-built components for faster development</p>
+                </section>
+
+                <!-- Buttons -->
+                <section id="buttons" class="component-section">
+                    <div class="section-header">
+                        <h2>Buttons</h2>
+                        <p>Various button styles and states</p>
+                    </div>
+
+                    <div class="component-card">
+                        <div class="card-header">
+                            <h3>Button Variants</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Style</th>
+                                            <th>Usage</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-btn</code></td>
+                                            <td>Base button</td>
+                                            <td>All buttons</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-primary</code></td>
+                                            <td>Primary style</td>
+                                            <td>Main actions</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-secondary</code></td>
+                                            <td>Secondary style</td>
+                                            <td>Secondary actions</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-outline</code></td>
+                                            <td>Outline style</td>
+                                            <td>Subtle actions</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="component-preview">
+                                <h4>Examples</h4>
+                                <div class="preview-area">
+                                    <button class="btn btn-primary"> Primary Button</button>
+                                    <button class="btn btn-secondary">Light-dark Button</button>
+                                    <button class="btn btn-outline">Outline Button</button>
+                                    <button class="btn" disabled>Disabled Button</button>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="component-card">
+                        <div class="card-header">
+                            <h3>Button Sizes</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Size</th>
+                                            <th>Usage</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-btn-sm</code></td>
+                                            <td>Small</td>
+                                            <td>Compact spaces</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn</code></td>
+                                            <td>Default</td>
+                                            <td>Regular use</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-lg</code></td>
+                                            <td>Large</td>
+                                            <td>Prominent actions</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="component-preview">
+                                <h4>Examples</h4>
+                                <div class="preview-area">
+                                    <button class="btn btn-primary btn-sm">Small Button</button>
+                                    <button class="btn btn-primary">Default Button</button>
+                                    <button class="btn btn-primary btn-lg">Large Button</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cards -->
+                <section id="cards" class="component-section">
+                    <div class="section-header">
+                        <h2>Cards</h2>
+                        <p>Flexible card components for content</p>
+                    </div>
+
+                    <div class="component-card">
+                        <div class="card-header">
+                            <h3>Card Components</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Element</th>
+                                            <th>Purpose</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.card</code></td>
+                                            <td>Container</td>
+                                            <td>Main card wrapper</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.card-header</code></td>
+                                            <td>Header</td>
+                                            <td>Card title area</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.card-body</code></td>
+                                            <td>Body</td>
+                                            <td>Main content area</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.card-footer</code></td>
+                                            <td>Footer</td>
+                                            <td>Action area</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="component-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="card" style="max-width: 300px;">
+                                        <div class="card-header">
+                                            <h4>Card Title</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>This is a sample card content with some example text to demonstrate the card component.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button class="btn btn-primary btn-sm">Action</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="card"&gt;
+  &lt;div class="card-header"&gt;...&lt;/div&gt;
+  &lt;div class="card-body"&gt;...&lt;/div&gt;
+  &lt;div class="card-footer"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Add more component sections as needed -->
+                
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 <a href="https://github.com/ajiboladev" target="_blank">Abdul-Azeez Ajibola</a></p>
+                <p>Developed & managed by Abdul-Azeez Ajibola</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js-main.js"></script>
+</body>
+</html>
