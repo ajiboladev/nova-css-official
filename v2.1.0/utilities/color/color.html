@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova CSS _ utilities-color</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="sidebar-color.css">
+    <link rel="stylesheet" href="media-color.css">
+    <link rel="icon" href="../../nova-logo.jpeg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../../index.html" class="logo">Nova CSS</a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../../utilities.html" class="nav-link active">Utilities</a></li>
+                    <li><a href="../../components.html" class="nav-link">Components</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">v2.1.0</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" active>v2.1.0 (Current)</a>
+                            <a href="#" class="dropdown-item">v2.0.0</a>
+                            <a href="#" class="dropdown-item">v1.0.0</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="nv-text-light-dark"><a href="#upward" class="nv-text-none nv-text-light-dark" style="text-decoration: none; color: #333;">Color</a></h3>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li><a href="#background-color" class="sidebar-link">Background Color</a></li>
+                    <li><a href="#text-color" class="sidebar-link">Text Color</a></li>
+                    <!-- <li><a href="#border-color" class="sidebar-link">Border Color</a></li> -->
+                    <p class="nv-mt-5"><strong>Note: </strong>Nova Css Color Utilities Is Limited.</p>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <section id="upward" class="page-header nv-mt-5">
+                    <h1>Color</h1>
+                    <p class="page-subtitle">Customize color, backgrounds, and components effortlessly using Nova CSS color utilities.</p>
+                    <p class="page-subtitle"><strong>Note:</strong> all Nova Css Documentation are started with <em>.nv-</em></p>
+                </section>
+
+                <!-- Spacing Utilities -->
+                <section class="utility-section">
+                    <div class="section-header">
+                        <h2>Color Utilities</h2>
+                        <p>Apply consistent text and background colors across your project with Nova CSS color utilities.</p>
+                    </div>
+                                        <!-- Background -->
+                    <div id="background-color" class="utility-card">
+                        <div class="card-header">
+                            <h3>Background Color Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Color</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-bg-primary</code></td>
+                                            <td>blue background</td>
+                                            <td class="nv-bg-primary"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-bg-secondary</code></td>
+                                            <td>green background</td>
+                                            <td class="nv-bg-secondary"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-bg-danger</code></td>
+                                            <td>red background</td>
+                                            <td class="nv-bg-danger"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-bg-warning</code></td>
+                                            <td>yellow background</td>
+                                            <td class="nv-bg-warning"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-bg-dark</code></td>
+                                            <td>black background</td>
+                                            <td class="nv-bg-dark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-bg-light-dark</code></td>
+                                            <td>grey background</td>
+                                            <td class="nv-bg-light-dark"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-bg-light</code></td>
+                                            <td>white background</td>
+                                            <td class="nv-bg-light"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-bg-transparent</code></td>
+                                            <td>transparent background</td>
+                                            <td class="nv-bg-transparent"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="m-4 p-4 bg-primary text-white rounded">
+                                        This box has a primary background color
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-m-4 nv-p-4 nv-bg-primary nv-text-light"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                                        <!-- Text Color -->
+                    <div id="text-color" class="utility-card">
+                        <div class="card-header">
+                            <h3>Text Color Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Color</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-text-primary</code></td>
+                                            <td>primary text</td>
+                                            <td class="nv-text-primary">blue Text</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-secondary</code></td>
+                                            <td>secondary text</td>
+                                            <td class="nv-text-secondary">green text</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-danger</code></td>
+                                            <td>danger text</td>
+                                            <td class="nv-text-danger">red text</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-warning</code></td>
+                                            <td>warning text</td>
+                                            <td class="nv-text-warning nv-fw-5">yellow text</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-dark</code></td>
+                                            <td>dark text</td>
+                                            <td class="nv-text-dark">black text</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-text-light-dark</code></td>
+                                            <td>light-dark text</td>
+                                            <td class="nv-text-light-dark">grey text</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-bg-danger nv-text-secondary nv-p-4">
+                                        This box danger background & secondary text color
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-bg-danger nv-text-secondary nv-p-4"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 <a href="https://github.com/ajiboladev" target="_blank">Abdul-Azeez Ajibola</a></p>
+                <p>Developed & managed by Abdul-Azeez Ajibola</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="color.js"></script>
+</body>
+</html>
