@@ -516,3 +516,27 @@ body {
     font-weight: 600;
     color: var(--gray-700);
 }
+
+/* =============================
+   COLOR UTILITIES
+   ============================= */
+   .blog {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    padding: var(--space-6);
+    text-align: center;
+    margin: var(--space-8) 0;
+    text-align: center;
+}
+ .feedback{
+    background-color: green;
+    width: 110px;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: rotate(270deg);
+ }
