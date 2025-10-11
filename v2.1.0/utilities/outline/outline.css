@@ -530,7 +530,7 @@ body {
     text-align: center;
 }
  .feedback{
-    background-color: var(--primary-600);
+    background-color: #333;
     width: 110px;
     padding: 8px;
     color: white;

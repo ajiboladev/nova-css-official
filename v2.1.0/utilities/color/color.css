@@ -539,4 +539,5 @@ body {
     right: 0;
     top: 50%;
     transform: rotate(270deg);
+    box-shadow: 0 0px 8px black;
  }

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova CSS _ utilities-border</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="border.css">
+    <link rel="stylesheet" href="sidebar-border.css">
+    <link rel="stylesheet" href="media-border.css">
+    <link rel="icon" href="../../nova-logo.jpeg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../../index.html" class="logo">Nova CSS</a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../../utilities.html" class="nav-link active">Utilities</a></li>
+                    <li><a href="../../components.html" class="nav-link">Components</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">v2.1.0</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" active>v2.1.0 (Current)</a>
+                            <a href="#" class="dropdown-item nv-disabled">v2.0.0</a>
+                            <a href="#" class="dropdown-item nv-disabled">v1.0.0</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="nv-text-light-dark"><a href="#upward" class="nv-text-none nv-text-light-dark" style="text-decoration: none; color: #333;">Border</a></h3>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li><a href="#border" class="sidebar-link">Border</a></li>
+                    <li><a href="#border-style" class="sidebar-link">Border Styles</a></li>
+                    <li><a href="#border-side" class="sidebar-link">Border Sides</a></li>
+                    <li><a href="#border-color" class="sidebar-link">Border Color</a></li>
+                    <li><a href="#border-radius" class="sidebar-link">Border Radius</a></li>
+                    <li><a href="#box-shadows" class="sidebar-link">Box Shadows</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <section id="upward" class="page-header nv-mt-5">
+                    <h1>Border</h1>
+                    <p class="page-subtitle">Design clean and structured layouts with Nova CSS border classes</p>
+                    <p class="page-subtitle"><strong>Note:</strong> all Nova Css Documentation are started with <em>.nv-</em></p>
+                </section>
+
+                <!-- Outline Utilities -->
+                <section class="utility-section">
+                    <div class="section-header">
+                        <h2>Border Utilities</h2>
+                        <p class="nv-text-underline">Style and customize element borders easily using Nova CSS border utilities.</p>
+
+                    </div>
+                                        <!-- Border -->
+                    <div id="border" class="utility-card">
+                        <div class="card-header">
+                            <h3>Border Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-border-0</code></td>
+                                            <td>border width</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-1</code></td>
+                                            <td>border width</td>
+                                            <td class="nv-border-1">1px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-2</code></td>
+                                            <td>border width</td>
+                                            <td class="nv-border-2">2px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-3</code></td>
+                                            <td>border width</td>
+                                            <td class="nv-border-3">3px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-4</code></td>
+                                            <td>border width</td>
+                                            <td class="nv-border-4">4px</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-p-4 nv-border-4 nv-text-white">
+                                        This box has border-4
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-p-4 nv-border-4 nv-text-white"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                                        <!-- Border Style -->
+                    <div id="border-style" class="utility-card">
+                        <div class="card-header">
+                            <h3>Border Style Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-border-solid</code></td>
+                                            <td class="nv-border-solid">Straight line</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-dashed</code></td>
+                                            <td class="nv-border-dashed">dashed line</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-dotted</code></td>
+                                            <td class="nv-border-dotted">dotted line</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-none</code></td>
+                                            <td class="nv-border-none">none</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-p-5 nv-bg-danger nv-text-light nv-border-dashed nv-border-4">
+                                        This box has dashed border
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-p-5 nv-bg-danger nv-text-light nv-border-dashed nv-border-4"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Border Side -->
+                    <div id="border-side" class="utility-card">
+                        <div class="card-header">
+                            <h3>Border Side Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>(.nv-border-top-1)</code>- <code>(.nv-border-top-4)</code></td>
+                                            <td>border top 1 - 4</td>
+                                            <td>1px - 4px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>(.nv-border-right-1)</code>- <code>(.nv-border-right-4)</code></td>
+                                            <td>border right 1 - 4</td>
+                                            <td>1px - 4px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>(.nv-border-bottom-1)</code>- <code>(.nv-border-bottom-4)</code></td>
+                                            <td>border bottom 1 - 4</td>
+                                            <td>1px - 4px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>(.nv-border-left-1)</code>- <code>(.nv-border-left-4)</code></td>
+                                            <td>border left 1 - 4</td>
+                                            <td>1px - 4px</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-pb-5 nv-bg-light-dark nv-text-light nv-border-left-4 nv-border-secondary nv-border-dashed">
+                                        This box has border left-4
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-pb-5 nv-bg-light-dark nv-text-light nv-border-left-4 nv-border-secondary nv-border-dashed"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Border color -->
+                    <div id="border-color" class="utility-card">
+                        <div class="card-header">
+                            <h3>Border Color Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Color</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-border-primary</code></td>
+                                            <td>border primary</td>
+                                            <td class="nv-border-primary nv-border-2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-secondary</code></td>
+                                            <td>border secondary</td>
+                                            <td class="nv-border-secondary nv-border-2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-danger</code></td>
+                                            <td>border danger</td>
+                                            <td class="nv-border-danger nv-border-2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-warning</code></td>
+                                            <td>border warning</td>
+                                            <td class="nv-border-warning nv-border-2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-light</code></td>
+                                            <td>border light</td>
+                                            <td class="nv-border-light"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-border-light-dark</code></td>
+                                            <td>border grey</td>
+                                            <td class="nv-border-light-dark nv-border-2"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-p-5  nv-text-dark nv-border-danger nv-border-2">
+                                        This box has danger border
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-p-5  nv-text-dark nv-border-danger nv-border-2"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Border Radius-->
+                    <div id="border-radius" class="utility-card">
+                        <div class="card-header">
+                            <h3>Border Radius Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-radius-0</code></td>
+                                            <td>border radius</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-radius-sm</code></td>
+                                            <td>small radius</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-radius-md</code></td>
+                                            <td>medium radius</td>
+                                            <td>0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-radius-lg</code></td>
+                                            <td>large radius</td>
+                                            <td>1rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-radius-full</code></td>
+                                            <td>full radius</td>
+                                            <td>50%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-p-5 nv-bg-warning nv-text-danger nv-text-center nv-radius-full">
+                                        This box has full radius
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-p-5 nv-bg-warning nv-text-danger nv-text-center nv-radius-full"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    <!-- Box Shadow-->
+                    <div id="box-shadows" class="utility-card">
+                        <div class="card-header">
+                            <h3>Box Shadow Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-shadow-sm</code></td>
+                                            <td>small shadow</td>
+                                            <td class="nv-shadow-sm nv-bg-danger"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-shadow-md</code></td>
+                                            <td>medium shadow</td>
+                                            <td class="nv-shadow-md nv-bg-primary"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-shadow-lg</code></td>
+                                            <td>large-shadow</td>
+                                            <td class="nv-shadow-lg nv-bg-secondary"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-shadow-xl</code></td>
+                                            <td>xlarge shadow</td>
+                                            <td class="nv-shadow-xl nv-bg-warning"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-shadow-none</code></td>
+                                            <td>none</td>
+                                            <td class="nv-shadow-none nv-bg-dark"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-m-3 nv-bg-danger nv-text-light nv-shadow-xl nv-p-4">
+                                        This box has xl shadow
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-m-3 nv-bg-danger nv-text-light nv-shadow-xl nv-p-4"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+      <!-- FEED BACK -->
+                <a href="https://wa.link/reoxkv">
+                    <section class="feedback">
+                    <h3>Feed Back</h1>
+                </section>
+                </a>
+
+                <!-- blog -->
+                <a href="../../../blog/index.html">
+                <section class="blog">
+                    <h3>Blog</h1>
+                </section>
+                </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 <a href="https://github.com/ajiboladev" target="_blank">Abdul-Azeez Ajibola</a></p>
+                <p>Developed & managed by Abdul-Azeez Ajibola</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="border.js"></script>
+</body>
+</html>

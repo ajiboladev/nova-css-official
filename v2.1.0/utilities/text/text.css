@@ -532,7 +532,7 @@ body {
 }
  .feedback{
     background-color: tomato;
-    width: 110px;
+    width: 110px; 
     padding: 8px;
     color: white;
     text-align: center;
@@ -540,4 +540,5 @@ body {
     right: 0;
     top: 50%;
     transform: rotate(270deg);
+    box-shadow: 0 0px 8px black;
  }

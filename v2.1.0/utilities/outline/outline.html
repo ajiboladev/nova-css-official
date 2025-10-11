@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova CSS _ utilities-outline</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="outline.css">
+    <link rel="stylesheet" href="sidebar-outline.css">
+    <link rel="stylesheet" href="media-outline.css">
+    <link rel="icon" href="../../nova-logo.jpeg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../../index.html" class="logo">Nova CSS</a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../../utilities.html" class="nav-link active">Utilities</a></li>
+                    <li><a href="../../components.html" class="nav-link">Components</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">v2.1.0</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" active>v2.1.0 (Current)</a>
+                            <a href="#" class="dropdown-item nv-disabled">v2.0.0</a>
+                            <a href="#" class="dropdown-item nv-disabled">v1.0.0</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="nv-text-light-dark"><a href="#upward" class="nv-text-none nv-text-light-dark" style="text-decoration: none; color: #333;">Outline</a></h3>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li><a href="#outline-width" class="sidebar-link">Outline Width</a></li>
+                    <li><a href="#outline-style" class="sidebar-link">Outline Style</a></li>
+                    <li><a href="#outline-color" class="sidebar-link">Outline Color</a></li>
+                    <li><a href="#outline-offset" class="sidebar-link">Outline Offset</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <section id="upward" class="page-header nv-mt-5">
+                    <h1>Outline</h1>
+                    <p class="page-subtitle">Enhance element focus and style with Nova CSS outline utilities</p>
+                    <p class="page-subtitle nv-mt-5"><strong>⚠️Note:</strong>Outline utilities are currently experimental and may not work as expected in this version. Full functionality will be fixed and improved in the next release.</p>
+                </section>
+
+                <!-- Outline Utilities -->
+                <section class="utility-section">
+                    <div class="section-header">
+                        <h2>Outline Utilities</h2>
+                        <p>Define focus and element boundaries with consistent outline styles</p>
+                    </div>
+                                        <!-- Outline -->
+                    <div id="outline-width" class="utility-card">
+                        <div class="card-header">
+                            <h3>Outline Width Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-o-0</code></td>
+                                            <td>outline</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-1</code></td>
+                                            <td>outline</td>
+                                            <td class="nv-o-5 nv-o-primary nv-o-solid">1px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-2</code></td>
+                                            <td>outline</td>
+                                            <td>2px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-3</code></td>
+                                            <td>outline</td>
+                                            <td>3px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-4</code></td>
+                                            <td>outline</td>
+                                            <td>4px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-5</code></td>
+                                            <td>outline</td>
+                                            <td>5px</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="m-4 p-4 bg-primary text-white rounded nv-o-5 nv-oo-5">
+                                        This box has outline
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="m-4 p-4 bg-primary text-white rounded nv-o-5 nv-o-primary nv-o-dashed"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                                        <!-- Outline Style -->
+                    <div id="outline-style" class="utility-card">
+                        <div class="card-header">
+                            <h3>Outline Style Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Style</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-o-solid</code></td>
+                                            <td>outline solid</td>
+                                            <td>straight line</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-dashed</code></td>
+                                            <td>outline dashed</td>
+                                            <td>dash line</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-dotted</code></td>
+                                            <td>outline dotted</td>
+                                            <td>dotted line</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-double</code></td>
+                                            <td>double outline</td>
+                                            <td>straight line x2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-p-5 nv-bg-danger nv-text-light ">
+                                        This box has padding top
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-pt-4 nv-bg-danger nv-text-light"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Outline Color -->
+                    <div id="outline-color" class="utility-card">
+                        <div class="card-header">
+                            <h3>Outline Color Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Color</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-o-danger</code></td>
+                                            <td>danger outline</td>
+                                            <td>red</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-primary</code></td>
+                                            <td>primary outline</td>
+                                            <td>blue</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-secondary</code></td>
+                                            <td>secondaryoutline</td>
+                                            <td>green</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-dark</code></td>
+                                            <td>defuult</td>
+                                            <td>black</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-light</code></td>
+                                            <td>light outline</td>
+                                            <td>white</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-o-warning</code></td>
+                                            <td>warning outline</td>
+                                            <td>yellow</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-p-5 nv-bg-light-dark nv-text-light nv-o-5 nv-o-danger">
+                                        This box has outline color
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-p-5 nv-bg-light-dark nv-text-light nv-o-5 nv-o-danger"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Outline Offset -->
+                    <div id="outline-offset" class="utility-card">
+                        <div class="card-header">
+                            <h3>Outline Offset Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-oo-0</code></td>
+                                            <td>offset</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-oo-1</code></td>
+                                            <td>offset</td>
+                                            <td>1px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-oo-2</code></td>
+                                            <td>offset</td>
+                                            <td>2px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-oo-3</code></td>
+                                            <td>offset</td>
+                                            <td>3px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-oo-4</code></td>
+                                            <td>offset</td>
+                                            <td>4px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-oo-5</code></td>
+                                            <td>offset</td>
+                                            <td>5px</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-p-5 nv-bg-secondary nv-text-light nv-o-5 nv-o-primary nv-oo-5">
+                                        This box has outline offset
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-p-5 nv-bg-secondary nv-text-light nv-o-5 nv-o-primary nv-oo-5"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+      <!-- FEED BACK -->
+                <a href="https://wa.link/reoxkv">
+                    <section class="feedback">
+                    <h3>Feed Back</h1>
+                </section>
+                </a>
+
+                <!-- blog -->
+                <a href="../../../blog/index.html">
+                <section class="blog">
+                    <h3>Blog</h1>
+                </section>
+                </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 <a href="https://github.com/ajiboladev" target="_blank">Abdul-Azeez Ajibola</a></p>
+                <p>Developed & managed by Abdul-Azeez Ajibola</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="outline.js"></script>
+</body>
+</html>
