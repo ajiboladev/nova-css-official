@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova CSS _ utilities-sizing</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="sizing.css">
+    <link rel="stylesheet" href="sidebar-sizing.css">
+    <link rel="stylesheet" href="media-sizing.css">
+    <link rel="icon" href="../../nova-logo.jpeg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../../index.html" class="logo">Nova CSS</a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../../utilities.html" class="nav-link active">Utilities</a></li>
+                    <li><a href="../../components.html" class="nav-link">Components</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">v2.1.0</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" active>v2.1.0 (Current)</a>
+                            <a href="#" class="dropdown-item nv-disabled">v2.0.0</a>
+                            <a href="#" class="dropdown-item nv-disabled">v1.0.0</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="nv-text-light-dark"><a href="#upward" class="nv-text-none nv-text-light-dark" style="text-decoration: none; color: #333;">Sizing</a></h3>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li><a href="#xs" class="sidebar-link">Extra Small Screen</a></li>
+                    <li><a href="#sm" class="sidebar-link">Small Screen</a></li>
+                    <li><a href="#md" class="sidebar-link">Midium Screen</a></li>
+                    <li><a href="#lg" class="sidebar-link">Large Screen</a></li>
+                    <li><a href="#xl" class="sidebar-link">Extra Large Screen</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <section id="upward" class="page-header nv-mt-5">
+                    <h1>Sizing</h1>
+                    <p class="page-subtitle">Build flexible layouts with Nova CSS sizing utilities</p>
+                    <p class="page-subtitle nv-mt-5"><strong>Note:</strong> using the Nova Css responsive engine, all breaking point unit ends with<em>:</em>before combining it with the actual styling starting with <em>.nv-</em></p>
+                </section>
+
+                <!-- Sizing Utilities -->
+                <section class="utility-section">
+                    <div class="section-header">
+                        <h2>Sizing Utilities</h2>
+                        <p>Set element width and height easily with built-in responsive sizing helpers.</p>
+                    </div>
+
+                    <div class="nova-container">
+                        <h3>Nova CSS Responsive Engine (Sizing)</h3>
+                        <p class=" nv-pt-5 nv-pb-5 nv-fs-6 nv-lh-3">Nova CSS Responsive Engine for sizing lets you control width, height, and overall layout behavior across different screen sizes with simple, intuitive classes. Using breakpoint prefixes like <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">sm:</code>, <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">md:</code>, <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">lg:</code>, and <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">xl:</code>, you can adjust element dimensions responsively without writing extra media queries. Whether it’s full-width containers, fixed cards, or adaptive images, Nova’s sizing system ensures your design stays consistent and flexible across all devices.</p>
+                    </div>
+                    
+                                        <!-- Note -->
+                    <div id="padding" class="utility-card">
+                        <div class="card-header">
+                            <h3>Responsive Engine</h3>
+                        </div>
+
+
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>breaking point</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id="xs">
+                                            <td><code>xs:</code></td>
+                                            <td>extra small</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr id="sm">
+                                            <td><code>sm:</code></td>
+                                            <td>small screen</td>
+                                            <td>≥576px</td>
+                                        </tr>
+                                        <tr id="md">
+                                            <td><code>md:</code></td>
+                                            <td>medium screen</td>
+                                            <td> ≥768px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code id="lg">lg:</code></td>
+                                            <td>large screen</td>
+                                            <td>≥992px</td>
+                                        </tr>
+                                         <tr>
+                                            <td><code id="xl">xl:</code></td>
+                                            <td> extra large</td>
+                                            <td>≥1200</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <div class="nv-text-light nv-p-4 nv-bg-danger sm:nv-bg-primary">
+                                        This box has red background in small screen, blue in medium, grey in large, and green in xl
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                                        
+
+      <!-- FEED BACK -->
+                <a href="https://wa.link/reoxkv">
+                    <section class="feedback">
+                    <h3>Feed Back</h1>
+                </section>
+                </a>
+
+                <!-- blog -->
+                <a href="../../../blog/index.html">
+                <section class="blog">
+                    <h3>Blog</h1>
+                </section>
+                </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 <a href="https://github.com/ajiboladev" target="_blank">Abdul-Azeez Ajibola</a></p>
+                <p>Developed & managed by Abdul-Azeez Ajibola</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="https://ajiboladev.github.io/nova-css/v2.1.0/js/nova.js"></script>
+
+    <script src="sizing.js"></script>
+</body>
+</html>

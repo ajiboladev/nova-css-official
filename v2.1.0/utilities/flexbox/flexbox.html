@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova CSS _ utilities-flexbox</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="flexbox.css">
+    <link rel="stylesheet" href="sidebar-flexbox.css">
+    <link rel="stylesheet" href="media-flexbox.css">
+    <link rel="icon" href="../../nova-logo.jpeg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../../index.html" class="logo">Nova CSS</a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../../utilities.html" class="nav-link active">Utilities</a></li>
+                    <li><a href="../../components.html" class="nav-link">Components</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">v2.1.0</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" active>v2.1.0 (Current)</a>
+                            <a href="#" class="dropdown-item nv-disabled">v2.0.0</a>
+                            <a href="#" class="dropdown-item nv-disabled">v1.0.0</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="nv-text-light-dark"><a href="#upward" class="nv-text-none nv-text-light-dark" style="text-decoration: none; color: #333;">Flexbox</a></h3>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li><a href="#xs" class="sidebar-link">Extra Small Screen</a></li>
+                    <li><a href="#sm" class="sidebar-link">Small Screen</a></li>
+                    <li><a href="#md" class="sidebar-link">Midium Screen</a></li>
+                    <li><a href="#lg" class="sidebar-link">Large Screen</a></li>
+                    <li><a href="#xl" class="sidebar-link">Extra Large Screen</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <section id="upward" class="page-header nv-mt-5">
+                    <h1>Flexbox</h1>
+                    <p class="page-subtitle">Build dynamic layouts with Nova CSS Flexbox utilities</p>
+                    <p class="page-subtitle"><strong>Note:</strong> all Nova Css Documentation are started with <em>.nv-</em></p>
+                </section>
+
+                <!-- Flexbox Utilities -->
+                <section class="utility-section">
+                    <div class="section-header">
+                        <h2>Flexbox Utilities</h2>
+                        <p>Set element width and height easily with built-in responsive sizing helpers.</p>
+                    </div>
+
+                                        <!-- Note -->
+                    <div id="padding" class="utility-card">
+                        <div class="card-header">
+                            <h3>Flexbox</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>class</th>
+                                            <th>Property</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-d-flex</code></td>
+                                            <td>display: flex</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-d-inline-flex </code></td>
+                                            <td>inline-flex</td>
+                                        </tr>
+                                            <tr>
+                                            <td><code>.nv-d-inline </code></td>
+                                            <td>inline</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-d-none</code></td>
+                                            <td>display: none</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area nv-d-flex">
+                                    <div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary nv-w-50">
+                                        This two box has display: flex
+                                    </div>
+                                    <div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary nv-w-50">
+                                        Which make them to stay side by side.
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary nv-d-flex"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                                <!-- Flexbox Derection -->
+                    <div id="padding" class="utility-card">
+                        <div class="card-header">
+                            <h3>Flexbox Direction</h3>
+                        </div>
+                            <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>class</th>
+                                            <th>Property</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-flex-row</code></td>
+                                            <td>direction: row</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-flex-row-reverse</code></td>
+                                            <td>direction: row-reverse</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-flex-col</code></td>
+                                            <td>direction: column</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-flex-col-reverse</code></td>
+                                            <td>direction: col-reverse</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area nv-flex-col">
+                                    <div class="nv-p-4 rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-warning xl:nv-bg-light-dark nv-w-50">
+                                        This two box has display: flex-col
+                                    </div>
+                                    <div class="nv-p-4 xs:nv-bg-primary  rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-danger nv-w-50">
+                                        Which make them to stay on top each other.
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                                <!-- Flexbox Wrap -->
+                    <div id="padding" class="utility-card">
+                        <div class="card-header">
+                            <h3>Flexbox Wrap</h3>
+                        </div>
+                            <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-flex-row</code></td>
+                                            <td>direction: row</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-flex-row-reverse</code></td>
+                                            <td>direction: row-reverse</td>
+                                            <!-- <td>≥576px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-flex-col</code></td>
+                                            <td>direction: column</td>
+                                            <!-- <td> ≥768px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-flex-col-reverse</code></td>
+                                            <td>direction: col-reverse</td>
+                                            <!-- <td>≥992px</td> -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area nv-flex-col">
+                                    <div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary nv-w-50">
+                                        This two box has display: flex-col
+                                    </div>
+                                    <div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary nv-w-50">
+                                        Which make them to stay on top each other.
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                        
+
+                                        
+
+      <!-- FEED BACK -->
+                <a href="https://wa.link/reoxkv">
+                    <section class="feedback">
+                    <h3>Feed Back</h1>
+                </section>
+                </a>
+
+                <!-- blog -->
+                <a href="../../../blog/index.html">
+                <section class="blog">
+                    <h3>Blog</h1>
+                </section>
+                </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 <a href="https://github.com/ajiboladev" target="_blank">Abdul-Azeez Ajibola</a></p>
+                <p>Developed & managed by Abdul-Azeez Ajibola</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="https://ajiboladev.github.io/nova-css/v2.1.0/js/nova.js"></script>
+
+    <script src="flexbox.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+                   

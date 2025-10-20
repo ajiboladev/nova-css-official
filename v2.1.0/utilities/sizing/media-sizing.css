@@ -1,0 +1,182 @@
+/* Nova CSS Documentation - Responsive Styles */
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: rgb(245, 245, 235);
+/* Warm vanilla-like cream  rgba(251, 249, 240, 0.781)*/
+    }
+}
+@media (prefers-color-scheme: light){
+    body{
+        background-color: rgb(245, 245, 235);
+/* Neutral cream with gray undertones */
+    }
+}
+/* Tablet */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 var(--space-6);
+    }
+    
+    /* Navigation */
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: var(--space-2);
+        gap: 3px;
+    }
+    
+    .nav-toggle span {
+        width: 20px;
+        height: 2px;
+        background: var(--gray-600);
+        transition: all 0.3s ease;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: var(--space-6);
+        box-shadow: var(--shadow-lg);
+        border-top: 1px solid var(--gray-200);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    /* Sidebar */
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    
+    .sidebar-close {
+        display: block;
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .sidebar-toggle {
+        display: block;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    /* Sections */
+    .section {
+        padding: var(--space-12) 0;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--space-4);
+    }
+    
+    /* Hero */
+    .hero {
+        padding: var(--space-16) 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Cards Grid */
+    .cards-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Tables */
+    .utility-table {
+        font-size: 0.875rem;
+    }
+    
+    .utility-table th,
+    .utility-table td {
+        padding: var(--space-2) var(--space-3);
+    }
+    
+    /* Code Snippets */
+    .code-snippet {
+        padding: var(--space-3);
+        font-size: 0.75rem;
+    }
+    
+    /* Page Header */
+    .page-header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .card-header h3 {
+        font-size: 1.125rem;
+    }
+    
+    .utility-table {
+        font-size: 0.75rem;
+    }
+    
+    .sidebar {
+        width: 100%;
+    }
+}
