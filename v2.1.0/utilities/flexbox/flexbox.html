@@ -50,11 +50,15 @@
             </div>
             <nav class="sidebar-nav">
                 <ul class="sidebar-menu">
-                    <li><a href="#xs" class="sidebar-link">Extra Small Screen</a></li>
-                    <li><a href="#sm" class="sidebar-link">Small Screen</a></li>
-                    <li><a href="#md" class="sidebar-link">Midium Screen</a></li>
-                    <li><a href="#lg" class="sidebar-link">Large Screen</a></li>
-                    <li><a href="#xl" class="sidebar-link">Extra Large Screen</a></li>
+                    <li><a href="#flexbox" class="sidebar-link">Flex</a></li>
+                    <li><a href="#flex-direction" class="sidebar-link">Flex Direction</a></li>
+                    <li><a href="#flex-wrap" class="sidebar-link">Flex Wrap</a></li>
+                    <li><a href="#justify-content" class="sidebar-link">Justify Content</a></li>
+                    <li><a href="#align-item" class="sidebar-link">Align Item</a></li>
+                    <li><a href="#align-content" class="sidebar-link">Align Content</a></li>
+                    <li><a href="#align-self" class="sidebar-link">Align Self</a></li>
+                    <li><a href="#gap" class="sidebar-link">Gap</a></li>
+                    <li><a href="#flex-grow" class="sidebar-link">Flex Grow</a></li>
                 </ul>
             </nav>
         </aside>
@@ -77,7 +81,7 @@
                     </div>
 
                                         <!-- Note -->
-                    <div id="padding" class="utility-card">
+                    <div id="flexbox" class="utility-card">
                         <div class="card-header">
                             <h3>Flexbox</h3>
                         </div>
@@ -115,10 +119,10 @@
                             <div class="utility-preview">
                                 <h4>Example</h4>
                                 <div class="preview-area nv-d-flex">
-                                    <div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary nv-w-50">
+                                    <div class="m-4 p-4  text-white nv-bg-secondary nv-w-50">
                                         This two box has display: flex
                                     </div>
-                                    <div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary nv-w-50">
+                                    <div class="m-4 p-4  text-white nv-bg-danger nv-w-50">
                                         Which make them to stay side by side.
                                     </div>
                                 </div>
@@ -132,7 +136,7 @@
 
 
                                 <!-- Flexbox Derection -->
-                    <div id="padding" class="utility-card">
+                    <div id="flex-direction" class="utility-card">
                         <div class="card-header">
                             <h3>Flexbox Direction</h3>
                         </div>
@@ -169,15 +173,15 @@
                             <div class="utility-preview">
                                 <h4>Example</h4>
                                 <div class="preview-area nv-flex-col">
-                                    <div class="nv-p-4 rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-warning xl:nv-bg-light-dark nv-w-50">
+                                    <div class="nv-p-4 rounded xs:nv-bg-light-dark sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-warning xl:nv-bg-light-dark nv-w-50">
                                         This two box has display: flex-col
                                     </div>
-                                    <div class="nv-p-4 xs:nv-bg-primary  rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-danger nv-w-50">
+                                    <div class="nv-mt-5 nv-p-4 xs:nv-bg-primary  rounded sm:nv-bg-danger md:nv-bg-warning lg:nv-bg-light-dark xl:nv-bg-danger nv-w-50">
                                         Which make them to stay on top each other.
                                     </div>
                                 </div>
                                 <div class="code-snippet">
-                                    <code>&lt;div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary"&gt;Content&lt;/div&gt;</code>
+                                    <code>&lt;div class="nv-mt-5 nv-p-4 xs:nv-bg-primary  rounded sm:nv-bg-danger md:nv-bg-pwarning lg:nv-bg-light-dark xl:nv-bg-danger nv-w-50"&gt;Content&lt;/div&gt;</code>
                                     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                                 </div>
                             </div>
@@ -187,7 +191,7 @@
 
 
                                 <!-- Flexbox Wrap -->
-                    <div id="padding" class="utility-card">
+                    <div id="flex-wrap" class="utility-card">
                         <div class="card-header">
                             <h3>Flexbox Wrap</h3>
                         </div>
@@ -229,15 +233,269 @@
                             <div class="utility-preview">
                                 <h4>Example</h4>
                                 <div class="preview-area nv-flex-col">
-                                    <div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary nv-w-50">
+                                    <div class="xs:nv-bg-danger nv-p-4 sm:nv-bg-primary md:nv-bg-light-dark lg:nv-bg-warning xl:nv-bg-danger">
                                         This two box has display: flex-col
                                     </div>
-                                    <div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary nv-w-50">
+                                    <div class="nv-mt-5 nv-p-4 xs:nv-bg-primary sm:nv-bg-danger md:nv-bg-warning lg:nv-bg-dark xl:nv-bg-danger">
                                         Which make them to stay on top each other.
                                     </div>
                                 </div>
                                 <div class="code-snippet">
-                                    <code>&lt;div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary"&gt;Content&lt;/div&gt;</code>
+                                    <code>&lt;div class="nv-mt-5 nv-p-4 xs:nv-bg-primary sm:nv-bg-danger md:nv-bg-warning lg:nv-bg-dark xl:nv-bg-danger"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                        <!-- Justify Content  -->
+                    <div id="justify-content" class="utility-card">
+                        <div class="card-header">
+                            <h3>Justify Content</h3>
+                        </div>
+                            <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-justify-start</code></td>
+                                            <td>flex-start</td>
+                                            <!-- <td></td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-justify-center</code></td>
+                                            <td>center</td>
+                                            <!-- <td>≥576px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-justify-end</code></td>
+                                            <td>flex-end</td>
+                                            <!-- <td> ≥768px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-justify-between</code></td>
+                                            <td>space-between</td>
+                                            <!-- <td>≥992px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-justify-around</code></td>
+                                            <td>space-around</td>
+                                            <!-- <td>≥992px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-justify-evenly</code></td>
+                                            <td>space-evenly</td>
+                                            <!-- <td>≥992px</td> -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area nv-flex-col">
+                                    <div class="nv-mt-5 nv-p-4 nv-bg-secondary nv-d-flex nv-justify-end">
+                                         This text has justify flex-end. that what make it to be at the edge point.   
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-mt-5 nv-p-4 nv-bg-secondary nv-d-flex nv-justify-end"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                     <!-- Align Item  -->
+                    <div id="align-item" class="utility-card">
+                        <div class="card-header">
+                            <h3>Align Item</h3>
+                        </div>
+                            <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>class</th>
+                                            <th>Property</th>
+                                            <!-- <th>Value</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-content-start </code></td>
+                                            <td>flex-start</td>
+                                            <!-- <td></td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-content-center</code></td>
+                                            <td>center</td>
+                                            <!-- <td>≥576px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>nv-content-end</code></td>
+                                            <td>flex-end</td>
+                                            <!-- <td> ≥768px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-content-between</code></td>
+                                            <td>space-between</td>
+                                            <!-- <td>≥992px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-content-around</code></td>
+                                            <td>space-around</td>
+                                            <!-- <td>≥992px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-content-stretch</code></td>
+                                            <td>stretch</td>
+                                            <!-- <td>≥992px</td> -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area nv-flex-col">
+                                    <div class="nv-mt-5 nv-p-4 nv-bg-secondary nv-d-flex nv-justify-center nv-items-center">
+                                         This text has Align Item Center.    
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-mt-5 nv-p-4 nv-bg-secondary nv-d-flex nv-justify-center nv-items-center"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                                    <!-- Align Content  -->
+                    <div id="align-content" class="utility-card">
+                        <div class="card-header">
+                            <h3>Align Content (for multi-line flex)</h3>
+                        </div>
+                            <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-items-start </code></td>
+                                            <td>flex-start</td>
+                                            <!-- <td></td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-items-center</code></td>
+                                            <td>center</td>
+                                            <!-- <td>≥576px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-items-end</code></td>
+                                            <td>flex-end</td>
+                                            <!-- <td> ≥768px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-items-baseline</code></td>
+                                            <td>baseline</td>
+                                            <!-- <td>≥992px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-items-stretch</code></td>
+                                            <td>stretch</td>
+                                            <!-- <td>≥992px</td> -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area nv-flex-col">
+                                    <div class="nv-mt-5 nv-p-4 nv-bg-light-dark nv-text-light  nv-d-flex nv-justify-center nv-content-center">
+                                         This text has Align center.    
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-mt-5 nv-p-4 nv-bg-light-dark nv-text-light  nv-d-flex nv-justify-center nv-content-center"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!-- Align Self  -->
+                    <div id="align-self" class="utility-card">
+                        <div class="card-header">
+                            <h3>Align Self</h3>
+                        </div>
+                            <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>class</th>
+                                            <th>Property</th>
+                                            <!-- <th>Value</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-self-auto </code></td>
+                                            <td>auto</td>
+                                            <!-- <td></td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-self-start</code></td>
+                                            <td>flex-start</td>
+                                            <!-- <td>≥576px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-self-center</code></td>
+                                            <td>center</td>
+                                            <!-- <td> ≥768px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-self-end</code></td>
+                                            <td>flex-end</td>
+                                            <!-- <td>≥992px</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-self-stretch </code></td>
+                                            <td>stretch</td>
+                                            <!-- <td>≥992px</td> -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area nv-flex-col">
+                                    <div class="nv-bg-danger nv-p-2 nv-m-2 nv-d-flex nv-self-end">
+                                        No preview available  
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>  No preview available</code>
                                     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                                 </div>
                             </div>
@@ -246,6 +504,143 @@
 
 
                         
+                            <!-- Gap  -->
+                    <div id="gap" class="utility-card">
+                        <div class="card-header">
+                            <h3>Gap</h3>
+                        </div>
+                            <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>class</th>
+                                            <th>Property</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-g-0</code></td>
+                                            <td>Gap</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-g-1</code></td>
+                                            <td>Gap</td>
+                                            <td>0.25rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-g-2</code></td>
+                                            <td>Gap</td>
+                                            <td> 0.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-g-3</code></td>
+                                            <td>Gap</td>
+                                            <td>1rem/td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-g-4</code></td>
+                                            <td>Gap</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-g-5</code></td>
+                                            <td>Gap</td>
+                                            <td>3rem</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area nv-d-flex nv-g-5">
+                                    <div class=" nv-p-3 text-white nv-bg-secondary nv-w-50">
+                                        This two box has d-flex
+                                    </div>
+                                    <div class="nv-p-3 text-white nv-bg-danger nv-w-50">
+                                        And has gap in-between
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-d-flex nv-g-5"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                      <!-- Flex Grow /Shrinks /Basis  -->
+                    <div id="flex-grow" class="utility-card">
+                        <div class="card-header">
+                            <h3>Flex Grow /Shrinks /Basis</h3>
+                        </div>
+                            <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>class</th>
+                                            <!-- <th>Property</th> -->
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-flex-1 </code></td>
+                                            <td>flex-1 1 0%</td>
+                                            <!-- <td>0</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-flex-auto</code></td>
+                                            <td>flex: 1 1 auto</td>
+                                            <!-- <td>0.25rem</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-flex-initial</code></td>
+                                            <td>flex: 0 1 auto</td>
+                                            <!-- <td> 0.5rem</td> -->
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-flex-none</code></td>
+                                            <td>flex: none</td>
+                                            <!-- <td>1rem/td> -->
+                                        </tr>
+                                        <!-- <tr>
+                                            <td><code>.nv-g-4</code></td>
+                                            <td>Gap</td>
+                                            <td>1.5rem</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-g-5</code></td>
+                                            <td>Gap</td>
+                                            <td>3rem</td>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area nv-d-flex nv-g-5">
+                                    <div class=" nv-p-3 text-white nv-bg-secondary nv-w-50">
+                                        This two box has d-flex
+                                    </div>
+                                    <div class="nv-p-3 text-white nv-bg-danger nv-w-50">
+                                        And has gap in-between
+                                    </div>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;div class="nv-d-flex nv-g-5"&gt;Content&lt;/div&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
 
                                         
 
@@ -272,20 +667,9 @@
             </div>
         </div>
     </footer>
+
     <script type="module" src="https://ajiboladev.github.io/nova-css/v2.1.0/js/nova.js"></script>
 
     <script src="flexbox.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-                   

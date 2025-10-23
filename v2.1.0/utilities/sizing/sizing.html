@@ -78,7 +78,7 @@
 
                     <div class="nova-container">
                         <h3>Nova CSS Responsive Engine (Sizing)</h3>
-                        <p class=" nv-pt-5 nv-pb-5 nv-fs-6 nv-lh-3">Nova CSS Responsive Engine for sizing lets you control width, height, and overall layout behavior across different screen sizes with simple, intuitive classes. Using breakpoint prefixes like <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">sm:</code>, <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">md:</code>, <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">lg:</code>, and <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">xl:</code>, you can adjust element dimensions responsively without writing extra media queries. Whether it’s full-width containers, fixed cards, or adaptive images, Nova’s sizing system ensures your design stays consistent and flexible across all devices.</p>
+                        <p class=" nv-pt-5 nv-pb-5 nv-fs-6 nv-lh-3">Nova CSS Responsive Engine for sizing lets you control width, height, and overall layout behavior across different screen sizes with simple, intuitive classes. Using breakpoint prefixes like<code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">xs:</code>, <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">sm:</code>, <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">md:</code>, <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">lg:</code>, and <code style="background-color: rgba(128, 128, 128, 0.349); padding: 1px;">xl:</code>, you can adjust element dimensions responsively without writing extra media queries. Whether it’s full-width containers, fixed cards, or adaptive images, Nova’s sizing system ensures your design stays consistent and flexible across all devices.</p>
                     </div>
                     
                                         <!-- Note -->
@@ -102,7 +102,7 @@
                                         <tr id="xs">
                                             <td><code>xs:</code></td>
                                             <td>extra small</td>
-                                            <td>0</td>
+                                            <td>≥0px</td>
                                         </tr>
                                         <tr id="sm">
                                             <td><code>sm:</code></td>
@@ -131,12 +131,12 @@
                             <div class="utility-preview">
                                 <h4>Example</h4>
                                 <div class="preview-area">
-                                    <div class="nv-text-light nv-p-4 nv-bg-danger sm:nv-bg-primary">
+                                    <div class="nv-text-light nv-p-4 xs:nv-bg-secondary sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary">
                                         This box has red background in small screen, blue in medium, grey in large, and green in xl
                                     </div>
                                 </div>
                                 <div class="code-snippet">
-                                    <code>&lt;div class="m-4 p-4  text-white rounded sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary"&gt;Content&lt;/div&gt;</code>
+                                    <code>&lt;div class="nv-text-light nv-p-4 xs:nv-bg-secondary sm:nv-bg-danger md:nv-bg-primary lg:nv-bg-light-dark xl:nv-bg-secondary"&gt;Content&lt;/div&gt;</code>
                                     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                                 </div>
                             </div>
