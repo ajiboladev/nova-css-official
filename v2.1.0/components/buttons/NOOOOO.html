@@ -1,0 +1,227 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova CSS _ utilities-button</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="sidebar-button.css">
+    <link rel="stylesheet" href="media-button.css">
+    <link rel="icon" href="../../nova-logo.jpeg">
+</head>
+<body>
+    Navigation
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../../index.html" class="logo">Nova CSS</a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../../utilities.html" class="nav-link active">Utilities</a></li>
+                    <li><a href="../../components.html" class="nav-link">Components</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">v2.1.0</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" active>v2.1.0 (Current)</a>
+                            <a href="#" class="dropdown-item nv-disabled">v2.0.0</a>
+                            <a href="#" class="dropdown-item nv-disabled">v1.0.0</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    Page Layout
+    <div class="page-layout">
+        Sidebar
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="nv-text-light-dark"><a href="#upward" class="nv-text-none nv-text-light-dark" style="text-decoration: none; color: #333;">Button</a></h3>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li><a href="#button-types" class="sidebar-link">Button Types</a></li>
+                    <li><a href="#button-sizes" class="sidebar-link">Button Sizes</a></li>
+                    <p class="nv-mt-5"><strong>Note: </strong>Nova CSS Button Utilities Is Limited.</p>
+                </ul>
+            </nav>
+        </aside>
+
+        Main Content
+        <main class="main-content">
+            <div class="container">
+                Page Header
+                <section id="upward" class="page-header nv-mt-5">
+                    <h1>Button</h1>
+                    <p class="page-subtitle">Customize buttons and their states effortlessly using Nova CSS button utilities.</p>
+                    <p class="page-subtitle"><strong>Note:</strong> all Nova Css Documentation are started with <em>.nv-</em></p>
+                </section>
+
+                Button Utilities
+                <section class="utility-section">
+                    <div class="section-header">
+                        <h2>Button Utilities</h2>
+                        <p>Apply consistent button styles and variants across your project with Nova CSS button utilities.</p>
+                    </div>
+                    
+                    Button Types
+                    <div id="button-types" class="utility-card">
+                        <div class="card-header">
+                            <h3>Button Type Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-btn-primary</code></td>
+                                            <td>Primary button</td>
+                                            <td><button class="nv-btn-primary nv-px-3 nv-py-2">Primary Button</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-secondary</code></td>
+                                            <td>Secondary button</td>
+                                            <td><button class="nv-btn-secondary nv-px-3 nv-py-2">Secondary Button</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-danger</code></td>
+                                            <td>Danger button</td>
+                                            <td><button class="nv-btn-danger nv-px-3 nv-py-2">Danger Button</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-warning</code></td>
+                                            <td>Warning button</td>
+                                            <td><button class="nv-btn-warning nv-px-3 nv-py-2">Warning Button</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-dark</code></td>
+                                            <td>Dark button</td>
+                                            <td><button class="nv-btn-dark nv-px-3 nv-py-2">Dark Button</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-light</code></td>
+                                            <td>Light button</td>
+                                            <td><button class="nv-btn-light nv-px-3 nv-py-2">Light Button</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-outline</code></td>
+                                            <td>Outline button</td>
+                                            <td><button class="nv-btn-outline nv-px-3 nv-py-2">Outline Button</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <button class="nv-btn-primary nv-m-2">Primary Button</button>
+                                    <button class="nv-btn-secondary nv-m-2">Secondary Button</button>
+                                    <button class="nv-btn-danger nv-m-2">Danger Button</button>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;button class="nv-btn-primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="nv-btn-secondary"&gt;Secondary Button&lt;/button&gt;
+&lt;button class="nv-btn-danger"&gt;Danger Button&lt;/button&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    Button Sizes
+                    <div id="button-sizes" class="utility-card">
+                        <div class="card-header">
+                            <h3>Button Size Utilities</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Property</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-btn-sm</code></td>
+                                            <td>Small button</td>
+                                            <td><button class="nv-btn-primary nv-btn-sm">Small Button</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-md</code></td>
+                                            <td>Medium button</td>
+                                            <td><button class="nv-btn-primary nv-btn-md">Medium Button</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-lg</code></td>
+                                            <td>Large button</td>
+                                            <td><button class="nv-btn-primary nv-btn-lg">Large Button</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="utility-preview">
+                                <h4>Example</h4>
+                                <div class="preview-area">
+                                    <button class="nv-btn-primary nv-btn-sm nv-m-2">Small</button>
+                                    <button class="nv-btn-primary nv-btn-md nv-m-2">Medium</button>
+                                    <button class="nv-btn-primary nv-btn-lg nv-m-2">Large</button>
+                                </div>
+                                <div class="code-snippet">
+                                    <code>&lt;button class="nv-btn-primary nv-btn-sm"&gt;Small&lt;/button&gt;
+&lt;button class="nv-btn-primary nv-btn-md"&gt;Medium&lt;/button&gt;
+&lt;button class="nv-btn-primary nv-btn-lg"&gt;Large&lt;/button&gt;</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     FEED BACK
+                <a href="https://wa.link/reoxkv">
+                    <section class="feedback">
+                    <h3>Feed Back</h1>
+                </section>
+                </a>
+
+                blog
+                <a href="../../../blog/index.html">
+                <section class="blog">
+                    <h3>Blog</h1>
+                </section>
+                </a>
+                    
+    Footer
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 <a href="https://github.com/ajiboladev" target="_blank">Abdul-Azeez Ajibola</a></p>
+                <p>Developed & managed by Abdul-Azeez Ajibola</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="button.js"></script>
+</body>
+</html> -->

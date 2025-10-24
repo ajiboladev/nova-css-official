@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova CSS _ Button Utilities</title>
+    <link rel="stylesheet" href="https://ajiboladev.github.io/nova-css/v2.1.0/css/style.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="sidebar-button.css">
+    <link rel="stylesheet" href="media-button.css">
+    <link rel="icon" href="../../nova-logo.jpeg">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../../index.html" class="logo">Nova CSS</a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../../utilities.html" class="nav-link">Utilities</a></li>
+                    <li><a href="../../components.html" class="nav-link active">Components</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle">v2.1.0</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" active>v2.1.0 (Current)</a>
+                            <a href="#" class="dropdown-item nv-disabled">v2.0.0</a>
+                            <a href="#" class="dropdown-item nv-disabled">v1.0.0</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="nv-text-light-dark"><a href="#upward" class="nv-text-none nv-text-light-dark" style="text-decoration: none; color: #333;">Button Utilities</a></h3>
+                <button class="sidebar-close" id="sidebarClose">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li><a href="#button-types" class="sidebar-link">Button Types</a></li>
+                    <li><a href="#button-sizes" class="sidebar-link">Button Sizes</a></li>
+                    <li><a href="#button-states" class="sidebar-link">Button States</a></li>
+                    <li><a href="#button-groups" class="sidebar-link">Button Groups</a></li>
+                    <li><a href="#button-outline" class="sidebar-link">Button Outline</a></li>
+                    <p class="nv-mt-5"><strong>Note: </strong>Nova CSS Button Utilities provide flexible styling options.</p>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <section id="upward" class="page-header nv-mt-5">
+                    <h1>Button Utilities</h1>
+                    <p class="page-subtitle">Create beautiful, accessible, and responsive buttons with Nova CSS button utilities. Customize appearance, states, and behavior with ease.</p>
+                    <p class="page-subtitle"><strong>Note:</strong> All Nova CSS documentation classes start with <code>.nv-</code> prefix.</p>
+                    <p class="nv-mt-5"><strong>Note: </strong>In Nova CSS, Both <code class="nv-p-2" style="background-color: rgba(177, 177, 172, 0.338);">nv-disabled</code> and <code class="nv-p-2" style="background-color: rgba(177, 177, 172, 0.338);">nv-btn-disabled</code> work on any element, but only <code class="nv-p-2" style="background-color: rgba(177, 177, 172, 0.338);">nv-btn-disabled</code> disables buttons visually and functionally.</p>
+                </section>
+
+                <!-- Button Utilities -->
+                <section class="utility-section">
+                    <div class="section-header">
+                        <h2>Button Variants & Styles</h2>
+                        <p>Choose from multiple button variants and styles to match your design system. All buttons are fully responsive and accessible.</p>
+                    </div>
+                    
+                    <!-- Button Types -->
+                    <div id="button-types" class="utility-card">
+                        <div class="card-header">
+                            <h3>Button Type Variants</h3>
+                            <p class="card-subtitle">Different button styles for various contexts and actions</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="button-showcase">
+                                <div class="button-variant-card">
+                                    <h4>Primary Buttons</h4>
+                                    <p class="nv-text-light-dark nv-fs-sm">Main actions and primary CTAs</p>
+                                    <div class="button-demo">
+                                        <button class="nv-btn-primary nv-px-4 nv-py-2">Primary</button>
+                                        <div class="button-states">
+                                            <span class="state-label">Default</span>
+                                            <span class="state-label">Hover</span>
+                                            <span class="state-label">Active</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="button-variant-card">
+                                    <h4>Secondary Buttons</h4>
+                                    <p class="nv-text-light-dark nv-fs-sm">Secondary actions and alternatives</p>
+                                    <div class="button-demo">
+                                        <button class="nv-btn-secondary nv-px-4 nv-py-2">Secondary</button>
+                                        <div class="button-states">
+                                            <span class="state-label">Default</span>
+                                            <span class="state-label">Hover</span>
+                                            <span class="state-label">Active</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="button-variant-card">
+                                    <h4>Danger Buttons</h4>
+                                    <p class="nv-text-light-dark nv-fs-sm">Destructive actions and warnings</p>
+                                    <div class="button-demo">
+                                        <button class="nv-btn-danger nv-px-4 nv-py-2">Danger</button>
+                                        <div class="button-states">
+                                            <span class="state-label">Default</span>
+                                            <span class="state-label">Hover</span>
+                                            <span class="state-label">Active</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Usage</th>
+                                            <th>Preview</th>
+                                            <th>States</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-btn-primary</code></td>
+                                            <td>Primary actions and main</td>
+                                            <td><button class="nv-btn-primary nv-px-3 nv-py-2">Primary</button></td>
+                                            <td>
+                                                <span class="status-indicator status-active"></span>Active
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-secondary</code></td>
+                                            <td>Secondary actions and alternatives</td>
+                                            <td><button class="nv-btn-secondary nv-px-3 nv-py-2">Secondary</button></td>
+                                            <td>
+                                                <span class="status-indicator status-active"></span>Active
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-danger</code></td>
+                                            <td>Destructive actions and warnings</td>
+                                            <td><button class="nv-btn-danger nv-px-3 nv-py-2">Danger</button></td>
+                                            <td>
+                                                <span class="status-indicator status-active"></span>Active
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-warning</code></td>
+                                            <td>Cautionary actions and alerts</td>
+                                            <td><button class="nv-btn-warning nv-px-3 nv-py-2">Warning</button></td>
+                                            <td>
+                                                <span class="status-indicator status-active"></span>Active
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-dark</code></td>
+                                            <td>Subtle actions with outline style</td>
+                                            <td><button class="nv-btn-dark nv-px-3 nv-py-2">Dark</button></td>
+                                            <td>
+                                                <span class="status-indicator status-active"></span>Active
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                           <div class="code-preview-container"  style="background-color: rgb(237, 230, 220);">
+                                <div class="code-preview-content">
+                                    <code>&lt;div class="nv-btn nv-btn-secondary&gt;&lt;/div&gt;</code>
+                                </div>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button Sizes -->
+                    <div id="button-sizes" class="utility-card">
+                        <div class="card-header">
+                            <h3>Button Size Variants</h3>
+                            <p class="card-subtitle">Different sizes for various contexts and hierarchies</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="preview-area">
+                                <div class="button-group-demo">
+                                    <button class="nv-btn nv-btn-primary nv-btn-sm">Small Button</button>
+                                    <button class="nv-btn nv-btn-primary nv-btn-md">Medium Button</button>
+                                    <button class="nv-btn nv-btn-primary nv-btn-lg">Large Button</button>
+                                </div>
+                            </div>
+
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Size Class</th>
+                                            <th>Usage</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-btn-sm</code></td>
+                                            <td>Compact spaces, dense interfaces</td>
+                                            <td><button class="nv-btn nv-btn-primary nv-btn-sm">Small</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-md</code></td>
+                                            <td>Default size, most common use</td>
+                                            <td><button class="nv-btn nv-btn-primary nv-btn-md">Medium</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-lg</code></td>
+                                            <td>Prominent actions, hero sections</td>
+                                            <td><button class="nv-btn nv-btn-primary nv-btn-lg">Large</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="code-preview-container" style="background-color: rgb(237, 230, 220);">
+                            <div class="code-preview-content">
+                                <code>&lt;div class="nv-btn nv-btn-primary nv-btn-lg&gt;&lt;/div&gt;</code>
+                            </div>
+                            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                        </div>
+                    </div>
+
+                    <!-- Button States -->
+                    <div id="button-states" class="utility-card">
+                        <div class="card-header">
+                            <h3>Button States</h3>
+                            <p class="card-subtitle">Different states for user interaction feedback</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="button-showcase">
+                                <div class="button-variant-card">
+                                    <h4>Active State</h4>
+                                    <p class="nv-text-light-dark nv-fs-sm">When button is being pressed</p>
+                                    <button class="nv-btn-primary nv-px-4 nv-py-2 nv-active">Active</button>
+                                </div>
+                                <div class="button-variant-card nv-btn-disabled">
+                                    <h4>Disabled State</h4>
+                                    <p class="nv-text-light-dark nv-fs-sm">When action is not available</p>
+                                    <button class="nv-btn-primary nv-px-4 nv-py-2" disabled>Disabled</button>
+                                </div>
+                                <!-- <div class="button-variant-card">
+                                    <h4>Loading State</h4>
+                                    <p class="nv-text-light-dark nv-fs-sm">When processing action</p>
+                                    <button class="nv-btn-primary nv-px-4 nv-py-2 animated-button">
+                                        <span class="icon-button">
+                                            <i>⟳</i> Loading...
+                                        </span>
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="code-preview-container"  style="background-color: rgb(237, 230, 220);">
+                            <div class="code-preview-content">
+                                <code class="nv-d-flex">&lt;div class="nv-btn nv-btn-secondary nv-btn-disabled&gt;&lt;/div&gt;</code>
+                                <code>&lt;div class="nv-btn nv-btn-secondary nv-btn-active&gt;&lt;/div&gt;</code>
+                            </div>
+                            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                        </div>
+                    </div>
+
+                    <!-- Button Outline -->
+                    <div id="button-outline" class="utility-card">
+                        <div class="card-header">
+                            <h3>Button Outline Variants</h3>
+                            <p class="card-subtitle"></p>
+                        </div>
+                        <div class="card-body">
+                            <div class="utility-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Size Class</th>
+                                            <th>Preview</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.nv-btn-outline-danger</code></td>
+                                            <td><button class="nv-btn nv-btn-outline-danger">Outline Danger</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-outline-light-dark</code></td>
+                                            <td><button class="nv-btn nv-btn-outline-light-dark">Outline Light Dark</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-outline-dark</code></td>
+                                            <td><button class="nv-btn nv-btn-outline-dark">Outline Dark</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-outline-light</code></td>
+                                            <td><button class="nv-btn nv-btn-outline-light">Outline Light</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-outline-primary</code></td>
+                                            <td><button class="nv-btn nv-btn-outline-primary">Outline Primary</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-outline-secondary</code></td>
+                                            <td><button class="nv-btn nv-btn-outline-secondary">Outline Secondary</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nv-btn-outline-warning</code></td>
+                                            <td><button class="nv-btn nv-btn-outline-warning">Outline Warning</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="code-preview-container" style="background-color: rgb(237, 230, 220);">
+                            <div class="code-preview-content">
+                                <code>&lt;div class="nv-btn nv-btn-outline-primary nv-btn-lg"&gt;&lt;/div&gt;</code>
+                            </div>
+                            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                        </div>
+                    </div>
+
+
+                    <!-- Button Groups -->
+                    <!-- <div id="button-groups" class="utility-card">
+                        <div class="card-header">
+                            <h3>Button Groups</h3>
+                            <p class="card-subtitle">Group related buttons together for better UX</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="preview-area">
+                                <h4>Horizontal Button Group</h4>
+                                <div class="button-group-demo">
+                                    <button class="nv-btn-outline nv-btn-sm">Left</button>
+                                    <button class="nv-btn-outline nv-btn-sm">Middle</button>
+                                    <button class="nv-btn-outline nv-btn-sm">Right</button>
+                                </div>
+                                
+                                <h4 class="nv-mt-4">Vertical Button Group</h4>
+                                <div class="button-group-vertical">
+                                    <button class="nv-btn-outline nv-btn-sm">Top</button>
+                                    <button class="nv-btn-outline nv-btn-sm">Middle</button>
+                                    <button class="nv-btn-outline nv-btn-sm">Bottom</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Interactive Demo -->
+                    <!-- <div id="interactive-demo" class="utility-card">
+                        <div class="card-header">
+                            <h3>Interactive Button Builder</h3>
+                            <p class="card-subtitle">Customize and preview buttons in real-time</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="interactive-preview">
+                                <h4>Button Preview</h4>
+                                <div id="liveButtonPreview" class="nv-m-4">
+                                    <button class="nv-btn-primary nv-btn-md" id="demoButton">
+                                        Custom Button
+                                    </button>
+                                </div>
+                                
+                                <div class="preview-controls">
+                                    <div class="control-group">
+                                        <label class="control-label">Variant</label>
+                                        <select class="control-select" id="variantSelect">
+                                            <option value="primary">Primary</option>
+                                            <option value="secondary">Secondary</option>
+                                            <option value="danger">Danger</option>
+                                            <option value="warning">Warning</option>
+                                            <option value="outline">Outline</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="control-group">
+                                        <label class="control-label">Size</label>
+                                        <select class="control-select" id="sizeSelect">
+                                            <option value="sm">Small</option>
+                                            <option value="md" selected>Medium</option>
+                                            <option value="lg">Large</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="control-group">
+                                        <label class="control-label">State</label>
+                                        <select class="control-select" id="stateSelect">
+                                            <option value="normal">Normal</option>
+                                            <option value="disabled">Disabled</option>
+                                            <option value="loading">Loading</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 -->
+                                <!-- <div class="code-preview-container nv-mt-4">
+                                    <div class="code-preview-header">
+                                        <span class="code-preview-title">Generated Code</span>
+                                        <div class="code-preview-actions">
+                                            <button class="copy-btn" onclick="copyDemoCode()">Copy</button>
+                                        </div>
+                                    </div>
+                                    <div class="code-preview-content">
+                                        <code id="generatedCode">&lt;button class="nv-btn-primary nv-btn-md"&gt;Custom Button&lt;/button&gt;</code>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="code-preview-container"  style="background-color: rgb(237, 230, 220);">
+                                        <div class="code-preview-content">
+                                            <code>Your code here</code>
+                                        </div>
+                                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                                    </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FEED BACK -->
+                <a href="https://wa.link/reoxkv">
+                    <section class="feedback">
+                        <h3>Feed Back</h3>
+                    </section>
+                </a>
+
+                <!-- blog -->
+                <a href="../../../blog/index.html">
+                    <section class="blog">
+                        <h3>Blog</h3>
+                    </section>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 <a href="https://github.com/ajiboladev" target="_blank">Abdul-Azeez Ajibola</a></p>
+                <p>Developed & managed by Abdul-Azeez Ajibola</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="button.js"></script>
+    <script>
+        // Interactive Demo Functionality
+        function updateButtonPreview() {
+            const variant = document.getElementById('variantSelect').value;
+            const size = document.getElementById('sizeSelect').value;
+            const state = document.getElementById('stateSelect').value;
+            const demoButton = document.getElementById('demoButton');
+            
+            // Reset classes
+            demoButton.className = 'nv-btn-primary nv-btn-md';
+            
+            // Apply variant
+            demoButton.className = demoButton.className.replace('nv-btn-primary', `nv-btn-${variant}`);
+            
+            // Apply size
+            demoButton.className = demoButton.className.replace('nv-btn-md', `nv-btn-${size}`);
+            
+            // Apply state
+            if (state === 'disabled') {
+                demoButton.disabled = true;
+                demoButton.textContent = 'Disabled Button';
+            } else if (state === 'loading') {
+                demoButton.disabled = false;
+                demoButton.innerHTML = '<span class="icon-button"><i>⟳</i> Loading...</span>';
+                demoButton.classList.add('animated-button');
+            } else {
+                demoButton.disabled = false;
+                demoButton.textContent = 'Custom Button';
+                demoButton.classList.remove('animated-button');
+            }
+            
+            // Update generated code
+            updateGeneratedCode(variant, size, state);
+        }
+
+        function updateGeneratedCode(variant, size, state) {
+            let code = `&lt;button class="nv-btn-${variant} nv-btn-${size}"`;
+            
+            if (state === 'disabled') {
+                code += ' disabled';
+            }
+            
+            code += '&gt;';
+            
+            if (state === 'loading') {
+                code += '&lt;span class="icon-button"&gt;&lt;i&gt;⟳&lt;/i&gt; Loading...&lt;/span&gt;';
+            } else if (state === 'disabled') {
+                code += 'Disabled Button';
+            } else {
+                code += 'Custom Button';
+            }
+            
+            code += '&lt;/button&gt;';
+            
+            document.getElementById('generatedCode').innerHTML = code;
+        }
+
+        function copyDemoCode() {
+            const codeElement = document.getElementById('generatedCode');
+            const code = codeElement.textContent;
+            
+            navigator.clipboard.writeText(code).then(() => {
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                button.style.backgroundColor = '#10b981';
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.backgroundColor = '';
+                }, 2000);
+            });
+        }
+
+        // Initialize interactive demo
+        document.addEventListener('DOMContentLoaded', function() {
+            const variantSelect = document.getElementById('variantSelect');
+            const sizeSelect = document.getElementById('sizeSelect');
+            const stateSelect = document.getElementById('stateSelect');
+            
+            if (variantSelect && sizeSelect && stateSelect) {
+                variantSelect.addEventListener('change', updateButtonPreview);
+                sizeSelect.addEventListener('change', updateButtonPreview);
+                stateSelect.addEventListener('change', updateButtonPreview);
+                
+                // Initial update
+                updateButtonPreview();
+            }
+        });
+
+        // Enhanced copy function
+        // Enhanced copy function
+function copyCode(button) {
+    // Find the code element - try different possible locations
+    let codeElement = null;
+    
+    // Try to find code in code-snippet structure
+    const codeSnippet = button.closest('.code-snippet');
+    if (codeSnippet) {
+        codeElement = codeSnippet.querySelector('code');
+    }
+    
+    // If not found, try code-preview-content structure
+    if (!codeElement) {
+        const codePreview = button.closest('.code-preview-content');
+        if (codePreview) {
+            codeElement = codePreview.querySelector('code');
+        }
+    }
+    
+    // If still not found, try previous sibling
+    if (!codeElement) {
+        codeElement = button.previousElementSibling;
+    }
+    
+    if (!codeElement || !codeElement.textContent) {
+        console.error('Could not find code element to copy');
+        alert('Could not find code to copy');
+        return;
+    }
+    
+    const codeToCopy = codeElement.textContent;
+    
+    // Modern clipboard API
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(codeToCopy)
+            .then(() => {
+                showCopySuccess(button);
+            })
+            .catch(err => {
+                console.error('Clipboard API failed:', err);
+                fallbackCopyText(codeToCopy, button);
+            });
+    } else {
+        // Fallback for older browsers
+        fallbackCopyText(codeToCopy, button);
+    }
+}
+
+function fallbackCopyText(text, button) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-999999px';
+    textArea.style.top = '-999999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            showCopySuccess(button);
+        } else {
+            alert('Copy failed. Please select and copy manually.');
+        }
+    } catch (err) {
+        console.error('Fallback copy failed:', err);
+        alert('Copy failed. Please select and copy manually.');
+    } finally {
+        document.body.removeChild(textArea);
+    }
+}
+
+function showCopySuccess(button) {
+    const originalText = button.textContent;
+    const originalBg = button.style.backgroundColor;
+    
+    button.textContent = 'Copied!';
+    button.style.backgroundColor = '#10b981';
+    button.style.color = 'white';
+    
+    setTimeout(() => {
+        button.textContent = originalText;
+        button.style.backgroundColor = originalBg;
+        button.style.color = '';
+    }, 2000);
+}
+    </script>
+</body>
+</html>
